@@ -1,0 +1,11 @@
+//override Bootstrap variables and custom mixins
+@import "scss/cvariables";
+
+//reboot
+@import "scss/reboot";
+
+//custom code/partials
+@import "scss/custom";
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
