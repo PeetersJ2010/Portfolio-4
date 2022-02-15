@@ -1,0 +1,35 @@
+@import "src/scss/cvariables";
+
+
+.nav-link{
+  color: whitesmoke;
+  text-shadow: 0 2px 5px $secondary;
+
+  &::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: whitesmoke;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.nav-top{
+  transition: all 0.5s;
+  background-color: rgba(0,0,0,0);
+}
+
+.nav-not-top{
+  transition: all 0.5s;
+  background-color: $secondary;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+}

@@ -1,0 +1,56 @@
+@import "src/scss/cvariables";
+
+.content{
+  height: 110vh;
+  background: url("~src/assets/wallpaper.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+  .hero-main{
+    padding-bottom: 15vh;
+    height: 100vh;
+
+    h1, p{
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      margin-bottom: 0;
+    }
+    h1{
+      font-size: 4.2rem;
+      letter-spacing: 2px;
+
+    }
+    p{
+      font-size: 1.4rem;
+    }
+
+    .socials{
+      margin-top: 5px;
+      .social-bubble{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        transition: all 0.2s;
+        &:hover{
+          background-color: $secondary;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        a{
+          color: whitesmoke;
+          text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+      }
+    }
+
+  }
+
+  .waves{
+    background: url("~src/assets/waves.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+  }
+}
