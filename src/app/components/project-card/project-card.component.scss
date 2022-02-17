@@ -1,0 +1,45 @@
+@import "src/scss/cvariables";
+
+.project-card {
+  box-shadow: 0 0 5px $danger;
+  border-radius: 10px;
+  padding: 10px;
+
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: 0 0 5px $primary;
+  }
+
+  .title {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+
+  .sub {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  small {
+    color: $primary;
+    font-size: 0.8rem;
+  }
+
+  .project-more {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    background-color: $primary;
+
+    i {
+      color: whitesmoke;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+  }
+}

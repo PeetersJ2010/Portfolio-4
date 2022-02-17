@@ -21,7 +21,6 @@ export class NavComponent implements OnInit {
     if (window.pageYOffset > element.clientHeight) {
       element.classList.remove('nav-top');
       element.classList.add('nav-not-top');
-      console.log("GR")
     } else {
       element.classList.add('nav-top');
       element.classList.remove('nav-not-top');

@@ -55,6 +55,25 @@
   text-align: center;
 }
 
+h2{
+  width: fit-content;
+  margin-bottom: -0px;
+  &::after{
+    display: block;
+    content: "";
+    width: 65%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: $primary;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+}
+
+.modal-dialog{
+  max-width: 70vw !important;
+}
+
 
 
 

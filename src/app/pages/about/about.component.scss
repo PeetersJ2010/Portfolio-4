@@ -1,0 +1,27 @@
+@import "src/scss/cvariables";
+
+.container{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  color: whitesmoke;
+  background-color: $secondary;
+
+  .info-img{
+    border-radius: 10px;
+  }
+
+  hr{
+    width: 25%;
+    margin: 15px auto;
+    color: $primary;
+    opacity: 1;
+    border-radius: 5px;
+    height: 3px;
+    border-width: 5px;
+  }
+
+  .btn-primary{
+    color: whitesmoke;
+    padding: 0 10px;
+  }
+}

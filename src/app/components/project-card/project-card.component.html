@@ -1,0 +1,16 @@
+<div class="bg-danger project-card mb-3">
+  <img src="assets/projects/{{project.img}}" class="img-fluid rounded mb-3" alt="{{project.img}}">
+  <div class="d-flex justify-content-between">
+    <div>
+      <p class="title">{{project.title}}</p>
+      <p class="sub">{{project.subTitle}}</p>
+      <small>{{project.year}}</small>
+    </div>
+    <div class="mt-auto mb-1">
+      <div class="project-more" (click)="openProject()">
+        <i class="bi bi-plus"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
