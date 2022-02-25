@@ -45,6 +45,7 @@
    color: $text;
    text-align: left;
    background-color: $secondary !important;
+   overflow-x: hidden !important;
 
    /* scrollbar width */
    &::-webkit-scrollbar {

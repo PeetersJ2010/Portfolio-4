@@ -1,0 +1,71 @@
+@import "src/scss/cvariables";
+
+.wrapper {
+  height: 95vh;
+  padding: 40px;
+
+  .paper {
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 8px 24px;
+    border-radius: 16px;
+    padding: 40px 35px;
+    height: 100%;
+
+    .content {
+      overflow-y: scroll;
+      height: 100%;
+      padding: 10px;
+      /* scrollbar width */
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* scrollbar track */
+      &::-webkit-scrollbar-track {
+        background: #eeeded;
+      }
+
+      /* scrollbar handle */
+      &::-webkit-scrollbar-thumb {
+        background-color: #5d5d5d;
+        //background-image: linear-gradient(to top, #4E797C 0%, #8FB8B5 100%);
+      }
+
+
+      //.carousel-control-next-icon {
+      //  //background-image: url("/images/projects/chevronR.svg");
+      //  position: absolute;
+      //  right: -25px;
+      //}
+      //
+      //.carousel-control-prev-icon {
+      //  //background-image: url("/images/projects/chevronL.svg");
+      //  position: absolute;
+      //  left: -25px;
+      //}
+
+      p {
+        white-space: pre-wrap;
+      }
+
+      .picsum-img-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+
+
+      .paper-header {
+        .close {
+          font-size: 2.5rem;
+        }
+      }
+
+      * {
+        color: black;
+      }
+    }
+  }
+}
+
+

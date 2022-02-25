@@ -9,8 +9,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { ProjectDetailComponent } from './pages/project-detail/project-detail.component';
 import {BsModalService} from "ngx-bootstrap/modal";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import {BsModalService} from "ngx-bootstrap/modal";
     ProgressBarComponent,
     ProjectsComponent,
     ProjectCardComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

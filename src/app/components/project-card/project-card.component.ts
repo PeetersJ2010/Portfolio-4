@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Project} from "../../interfaces/project";
-import {BsModalRef, BsModalService} from "ngx-bootstrap/modal";
-import {ProjectDetailComponent} from "../project-detail/project-detail.component";
+
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-project-card',
@@ -10,17 +10,26 @@ import {ProjectDetailComponent} from "../project-detail/project-detail.component
 })
 export class ProjectCardComponent implements OnInit {
 
-  @Input() project: Project = {id:"NA", img:"NA", year:"NA", subTitle: "NA", title:"NA", category: "NA"};
-  bsModalRef: BsModalRef = new BsModalRef();
+  @Input() project: Project = {
+    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: "NA",
+    content: {
+      about: "",
+      contribution: "",
+      images: [""],
+      verdict: "",
+      attachments: [{url: "", name: ""}],
+    }
+  };
 
-  constructor(private bsModalService: BsModalService) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
   }
 
-  openProject() {
-    this.bsModalRef = this.bsModalService.show(ProjectDetailComponent);
-    this.bsModalRef.content.project = this.project;
+  openProject(id: string) {
+    console.log("fi");
+    this.router.navigate(['/projects', id]).then();
   }
 
 }
