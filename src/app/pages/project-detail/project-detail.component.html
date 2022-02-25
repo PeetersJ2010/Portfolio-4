@@ -12,10 +12,11 @@
       <p>{{project.content.contribution}}</p>
 
 
-      <ngb-carousel *ngIf="images[0] != ''">
-        <ng-template ngbSlide *ngFor="let image of images">
+      <ngb-carousel *ngIf="project.content.images.length > 0">
+        <ng-template ngbSlide *ngFor="let image of project.content.images">
           <div class="picsum-img-wrapper">
-            <img [src]="'assets/projects/'+ project.id + '/' + image" alt="Random first slide" width="70%" class="img-fluid">
+
+            <img [ngClass]="{'w-25' : project.id == 'ca' || project.id == 'md'}" [src]="'assets/projects/'+ project.id + '/' + image" alt="{{'Image for ' + project.title}}" width="70%" class="img-fluid">
           </div>
         </ng-template>
       </ngb-carousel>
@@ -27,7 +28,7 @@
       <h4 class="mb-0">Bijlage</h4>
       <hr class="mt-2 mb-3">
       <div class="d-flex">
-        <button class="btn btn-primary me-2" *ngFor="let attachment of attachments">{{attachment}}</button>
+        <button class="btn btn-primary me-2" *ngFor="let attachment of project.content.attachments">{{attachment.name}}</button>
       </div>
     </div>
   </div>

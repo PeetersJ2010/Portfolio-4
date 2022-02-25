@@ -28,21 +28,8 @@
       /* scrollbar handle */
       &::-webkit-scrollbar-thumb {
         background-color: #5d5d5d;
-        //background-image: linear-gradient(to top, #4E797C 0%, #8FB8B5 100%);
       }
 
-
-      //.carousel-control-next-icon {
-      //  //background-image: url("/images/projects/chevronR.svg");
-      //  position: absolute;
-      //  right: -25px;
-      //}
-      //
-      //.carousel-control-prev-icon {
-      //  //background-image: url("/images/projects/chevronL.svg");
-      //  position: absolute;
-      //  left: -25px;
-      //}
 
       p {
         white-space: pre-wrap;
@@ -51,6 +38,7 @@
       .picsum-img-wrapper {
         display: flex;
         justify-content: center;
+
       }
 
 

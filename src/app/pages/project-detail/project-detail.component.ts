@@ -11,9 +11,6 @@ import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
 })
 export class ProjectDetailComponent implements OnInit {
 
-  images: string[] = [];
-  attachments: object[] = [];
-
   project: Project = {
     id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: "NA",
     content: {
