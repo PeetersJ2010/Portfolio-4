@@ -14,10 +14,14 @@ export class ProjectService {
       subTitle: "Angular Challenge: Sport Webshop",
 
       content: {
-        about: "",
-        contribution: "",
-        images: [""],
-        verdict: "",
+        about:
+          "Tijdens mijn derde jaar in de professionele bachelor opleiding Application Development op Thomas More in Geel, kregen alle studenten de opdracht om in groep een webshop te maken in Angular en een backend naar keuze. Samen met mijn groep hadden we gekozen voor de combinatie van Angular en een .NET backend omdat de opdrachtgever, Michiel van dotNET lab was, en hij een sterke voorkeur hiervoor had." +
+          "\n\n" +
+          "Er werden een heleboel eisen opgesteld door dotNet lab en omdat we maar 3 weken de tijd hadden gekregen, moesten we alles op alles zetten. De eisen waren onder andere een overzicht van de producten, detail pagina's, winkelmandje, beheren van producten en nog veel meer. Het thema van de webshop was voor iedereen hetzelfde, namelijk een webshop voor sportvoeding en accessoires. Aangevuld met deze basis eisen, kwamen er nog een aantal nice to haves aan bod zoals paginatien, superadmin rol, suggesties uit vorige aankopen, ..."
+        ,
+        contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot op een mooi resultaat kunnen afwerken. We hebben alle basis eisen en nice to haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle scherm ontwerpen gemaakt als prototype en hierna geprogrammeerd en ook nog een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
+        images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg"],
+        verdict: "Met deze opdracht zijn we als eerste beëindigd voor de Angular challenge. Natuurlijk zijn we allemaal heel trots op het teamwerk en de webshop zelf. Na deze opdracht kan ik toch wel zelfzeker zeggen dat ik thuis hoor in de front-end. Angular is een zeer tof framework om in te werken en zeker iets waar ik naar de toekomst zal uitkijken.",
         attachments: [{name: "", url: ""}]
       },
 
@@ -32,7 +36,7 @@ export class ProjectService {
       subTitle: "Project Angular: ToDo App",
 
       content: {
-        about: "",
+        about: "Tijdens mijn derde jaar, in de professionele bachelor opleiding, Application Development op Thomas More in Geel, kregen alle studenten de opdracht om een todo applicatie te maken in Angular. Het score op deze opdracht bepaalde dan de groepjes voor de Angular Challenge die hierna volgde.",
         contribution: "",
         images: [""],
         verdict: "",

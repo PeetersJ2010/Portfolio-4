@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {Project} from "../../interfaces/project";
 
 import {Router} from "@angular/router";
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-project-card',
@@ -21,13 +22,15 @@ export class ProjectCardComponent implements OnInit {
     }
   };
 
-  constructor(private router: Router) {
+  constructor(private vpscroller: ViewportScroller, private router: Router) {
+    vpscroller.setOffset([0,80]);
   }
 
   ngOnInit(): void {
   }
 
   openProject(id: string) {
+    this.vpscroller.scrollToAnchor("projects")
     console.log("fi");
     this.router.navigate(['/projects', id]).then();
   }

@@ -14,6 +14,7 @@ import {BsModalService} from "ngx-bootstrap/modal";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from "@angular/forms";
+import {ScrollSpyModule} from "@thisissoon/angular-scrollspy";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {FormsModule} from "@angular/forms";
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    ScrollSpyModule.forRoot()
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@
 .nav-link{
   color: whitesmoke;
   text-shadow: 0 2px 5px $secondary;
+  cursor: pointer;
 
   &::after{
     border-radius: 5px;

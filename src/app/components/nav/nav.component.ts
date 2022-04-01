@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +11,9 @@ import {Component, HostListener, OnInit} from '@angular/core';
 
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private vpscroller: ViewportScroller) {
+    vpscroller.setOffset([0,80]);
+  }
 
   ngOnInit(): void {
   }
@@ -25,6 +28,10 @@ export class NavComponent implements OnInit {
       element.classList.add('nav-top');
       element.classList.remove('nav-not-top');
     }
+  }
+
+  scroll(id: string){
+    this.vpscroller.scrollToAnchor(id)
   }
 }
 

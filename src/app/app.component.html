@@ -1,6 +1,6 @@
 <main [@routeAnimations]="prepareRoute(outlet)">
   <app-nav></app-nav>
-  <app-home></app-home>
-  <app-about></app-about>
-  <router-outlet #outlet="outlet"></router-outlet>
+  <app-home id="home"></app-home>
+  <app-about id="about"></app-about>
+  <router-outlet #outlet="outlet" id="projects"></router-outlet>
 </main>
