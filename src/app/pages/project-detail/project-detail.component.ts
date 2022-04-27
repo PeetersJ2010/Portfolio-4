@@ -3,6 +3,8 @@ import {Project} from "../../interfaces/project";
 import {ProjectService} from "../../services/project.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
+import { AttachmentType } from 'src/app/interfaces/attachment';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-project-detail',
@@ -18,12 +20,12 @@ export class ProjectDetailComponent implements OnInit {
       contribution: "",
       images: [""],
       verdict: "",
-      attachments: [{url: "", name: ""}],
+      attachments: [],
     }
   };
 
 
-  constructor(private projectService: ProjectService, private route: ActivatedRoute, private router: Router, config: NgbCarouselConfig) {
+  constructor(private vpscroller: ViewportScroller, private projectService: ProjectService, private route: ActivatedRoute, private router: Router, config: NgbCarouselConfig) {
     config.interval = 50000;
     config.wrap = true;
     config.keyboard = true;
@@ -42,5 +44,8 @@ export class ProjectDetailComponent implements OnInit {
     }
   }
 
+  scroll(id: string){
+    this.vpscroller.scrollToAnchor(id)
+  }
 
 }

@@ -14,7 +14,11 @@ import {BsModalService} from "ngx-bootstrap/modal";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from "@angular/forms";
-import {ScrollSpyModule} from "@thisissoon/angular-scrollspy";
+import { ProjectAttachmentComponent } from './components/project-attachment/project-attachment.component';
+import {ScrollSpyModule} from "ng-spy";
+import {MdbCarouselModule} from "mdb-angular-ui-kit/carousel";
+import { FooterComponent } from './components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +30,8 @@ import {ScrollSpyModule} from "@thisissoon/angular-scrollspy";
     ProjectsComponent,
     ProjectCardComponent,
     ProjectDetailComponent,
+    ProjectAttachmentComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import {ScrollSpyModule} from "@thisissoon/angular-scrollspy";
     BrowserAnimationsModule,
     NgbModule,
     FormsModule,
-    ScrollSpyModule.forRoot()
+    ScrollSpyModule,
+    MdbCarouselModule,
+
+
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

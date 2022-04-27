@@ -5,6 +5,7 @@
   color: whitesmoke;
   text-shadow: 0 2px 5px $secondary;
   cursor: pointer;
+  text-align: end;
 
   &::after{
     border-radius: 5px;
@@ -33,4 +34,53 @@
   transition: all 0.5s;
   background-color: $danger;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.navbar-toggler {
+  border-color: #242331;
+
+  &:hover {
+    span {
+      background: #FFF;
+    }
+  }
+
+  &:focus {
+    background: none !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    span {
+      background: #FFF;
+    }
+  }
+
+  span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #fff;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  }
+
+
+  &[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  &[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  &[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  &[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+  }
 }

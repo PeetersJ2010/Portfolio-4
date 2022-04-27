@@ -19,6 +19,5 @@ export class ProjectsComponent implements OnInit {
 
   getProjects() : void {
     this.projects = this.projectService.getProjects();
-    console.log(this.projects)
   }
 }

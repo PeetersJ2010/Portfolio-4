@@ -1,5 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ViewportScroller} from "@angular/common";
+import {ScrollSpyService} from "ng-spy";
 
 @Component({
   selector: 'app-nav',
@@ -7,16 +8,21 @@ import {ViewportScroller} from "@angular/common";
   styleUrls: ['./nav.component.scss']
 })
 
-
-
 export class NavComponent implements OnInit {
 
-  constructor(private vpscroller: ViewportScroller) {
+  isCollapsed : Boolean = true;
+
+  constructor(private vpscroller: ViewportScroller, private scrollspyService: ScrollSpyService) {
     vpscroller.setOffset([0,80]);
   }
 
   ngOnInit(): void {
+    this.scrollspyService.activeSpyTarget.subscribe(
+      (activeTargetName: string) => console.log(activeTargetName)
+    );
   }
+
+
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {

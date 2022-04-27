@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import { AttachmentTypes } from '../interfaces/attachment';
 import {Project} from "../interfaces/project";
 
 @Injectable({
@@ -22,7 +23,7 @@ export class ProjectService {
         contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot op een mooi resultaat kunnen afwerken. We hebben alle basis eisen en nice to haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle scherm ontwerpen gemaakt als prototype en hierna geprogrammeerd en ook nog een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
         images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg"],
         verdict: "Met deze opdracht zijn we als eerste beëindigd voor de Angular challenge. Natuurlijk zijn we allemaal heel trots op het teamwerk en de webshop zelf. Na deze opdracht kan ik toch wel zelfzeker zeggen dat ik thuis hoor in de front-end. Angular is een zeer tof framework om in te werken en zeker iets waar ik naar de toekomst zal uitkijken.",
-        attachments: [{name: "", url: ""}]
+        attachments: []
       },
 
       year: "2021-2022",
@@ -40,7 +41,7 @@ export class ProjectService {
         contribution: "",
         images: [""],
         verdict: "",
-        attachments: [{name: "", url: ""}]
+        attachments: []
       },
 
       year: "2021-2022",
@@ -71,8 +72,19 @@ export class ProjectService {
         attachments: [
           {
             name: "Website",
-            url: "https://www.rootzbarber.com/"
-          }
+            url: "https://www.rootzbarber.com/",
+            type: AttachmentTypes.website
+          },
+          {
+            name: "Download",
+            url: "https://www.rootzbarber.com/",
+            type: AttachmentTypes.download
+          },
+          {
+            name: "Github",
+            url: "https://www.rootzbarber.com/",
+            type: AttachmentTypes.github
+          },
         ],
       },
       year: "2020-2021",
@@ -100,7 +112,7 @@ export class ProjectService {
           "Scherm5.jpg",
         ],
         verdict: "Dit project is gebouwd op het Laravel framework, wat een nieuwe ervaring was voor mij. Het was ook de eerste keer dat ik met een web framework een webapplicatie heb gebouwd. Deze ervaring heeft mij veel bijgeleerd, niet alleen op technisch vlak, maar ook wat ik later wil doen na mijn opleiding: webapplicaties ontwikkelen.",
-        attachments: [{name: "Web applicatie", url: "https://wka.sinners.be/"}]
+        attachments: [{name: "Web applicatie", url: "https://wka.sinners.be/", type: AttachmentTypes.website}]
       },
 
       year: "2020-2021",
@@ -126,7 +138,7 @@ export class ProjectService {
           "Scherm5.JPG",
         ],
         verdict: "Persoonlijk ben ik geen fan van het programmeren met het MVVM patroon. Vergeleken met MVC is dit kinderspel. WPF heeft zijn eigen voor- en nadelen maar ik ben er wel zeker van dat ik dit later in mijn professionele carrière niet meer wil tegenkomen.",
-        attachments: [{name: "Github", url: "https://github.com/PeetersJ2010/WPF-Schaken"}]
+        attachments: [{name: "Github", url: "https://github.com/PeetersJ2010/WPF-Schaken", type: AttachmentTypes.website}]
       },
 
       year: "2020-2021",
@@ -152,7 +164,7 @@ export class ProjectService {
           "Scherm5.JPG",
         ],
         verdict: "Zowel ikzelf als de uitbaters van Den Doorenboom waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij.",
-        attachments: [{name: "Website", url: "https://decourant.be/"}]
+        attachments: [{name: "Website", url: "https://decourant.be/", type: AttachmentTypes.website}]
       },
 
       year: "2020-2021",
@@ -176,7 +188,7 @@ export class ProjectService {
           "Scherm5.jpg",
         ],
         verdict: "DRForces is nog zeer jong maar heeft vele belovende projecten in haar toekomst. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
-        attachments: [{name: "Website", url: "https://drforces.eu/"}]
+        attachments: [{name: "Website", url: "https://drforces.eu/", type:AttachmentTypes.website}]
       },
 
       year: "2020-2021",
@@ -202,8 +214,8 @@ export class ProjectService {
         ],
         verdict: "Dit was de eerste keer dat ik een volledig mobiele app heb geschreven. Door middel van jQuery en Javascript heb ik de mogelijkheden ontdekt van het Cordova framework. Ook heb ik nieuwe inzichten gekregen op het gebruiken van de meta data van .mp3 bestanden.",
         attachments: [
-          {name: "APK", url: ""},
-          {name: "Verslag", url: ""}
+          {name: "APK", url: "", type: AttachmentTypes.download},
+          {name: "Verslag", url: "", type: AttachmentTypes.download}
         ]
       },
 

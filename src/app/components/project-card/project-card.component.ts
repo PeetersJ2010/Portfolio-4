@@ -18,20 +18,19 @@ export class ProjectCardComponent implements OnInit {
       contribution: "",
       images: [""],
       verdict: "",
-      attachments: [{url: "", name: ""}],
+      attachments: [],
     }
   };
 
   constructor(private vpscroller: ViewportScroller, private router: Router) {
-    vpscroller.setOffset([0,80]);
+    vpscroller.setOffset([0,60]);
   }
 
   ngOnInit(): void {
   }
 
   openProject(id: string) {
-    this.vpscroller.scrollToAnchor("projects")
-    console.log("fi");
+    this.vpscroller.scrollToAnchor("projects");
     this.router.navigate(['/projects', id]).then();
   }
 

@@ -1,35 +1,39 @@
 <div class="wrapper container">
   <div class="paper">
+    <div class="paper-header d-flex align-items-center justify-content-between">
+      <h3 class="mb-0" (click)="scroll('projects')">{{project.title}}</h3>
+      <a routerLink="/" class="close"><i class="bi bi-x"></i></a>
+    </div>
+    <hr class="mt-0 mb-3">
     <div class="content">
-      <div class="paper-header d-flex align-items-center justify-content-between">
-        <h3 class="mb-0">{{project.title}}</h3>
-        <a routerLink="/" class="close"><i class="bi bi-x"></i></a>
-      </div>
-      <hr class="mt-0 mb-3">
+
       <p>{{project.content.about}}</p>
       <h4 class="mb-0">Mijn bijdrage</h4>
       <hr class="mt-2 mb-3">
       <p>{{project.content.contribution}}</p>
 
-
-      <ngb-carousel *ngIf="project.content.images.length > 0">
-        <ng-template ngbSlide *ngFor="let image of project.content.images">
+      <mdb-carousel [controls]="true" [indicators]="false" [animation]="'slide'"  *ngIf="project.content.images.length > 0">
+        <mdb-carousel-item *ngFor="let image of project.content.images">
           <div class="picsum-img-wrapper">
-
-            <img [ngClass]="{'w-25' : project.id == 'ca' || project.id == 'md'}" [src]="'assets/projects/'+ project.id + '/' + image" alt="{{'Image for ' + project.title}}" width="70%" class="img-fluid">
+            <img
+              [ngClass]="{'w-25' : project.id == 'ca' || project.id == 'md'}" [src]="'assets/projects/'+ project.id + '/' + image" alt="{{'Image for ' + project.title}}" width="70%" class="img-fluid"
+            />
           </div>
-        </ng-template>
-      </ngb-carousel>
+        </mdb-carousel-item>
+      </mdb-carousel>
 
-      <h4 class="mb-0">Besluit</h4>
+
+      <h4 class="mb-0 mt-2">Besluit</h4>
       <hr class="mt-2 mb-3">
       <p>{{project.content.verdict}}</p>
 
-      <h4 class="mb-0">Bijlage</h4>
-      <hr class="mt-2 mb-3">
-      <div class="d-flex">
-        <button class="btn btn-primary me-2" *ngFor="let attachment of project.content.attachments">{{attachment.name}}</button>
-      </div>
+     <ng-container *ngIf="project.content.attachments.length > 0">
+       <h4 class="mb-0">Bijlage</h4>
+       <hr class="mt-2 mb-3">
+       <div class="d-flex flex-wrap">
+         <app-project-attachment [attachment]=attachment *ngFor="let attachment of project.content.attachments"></app-project-attachment>
+       </div>
+     </ng-container>
     </div>
   </div>
 </div>
