@@ -1,5 +1,5 @@
 <div class="wrapper container">
-  <div class="paper">
+  <div class="paper" (click)="scroll('projects')">
     <div class="paper-header d-flex align-items-center justify-content-between">
       <div class="d-flex align-items-center">
         <h3 class="mb-0 me-2" (click)="scroll('projects')">{{project.title}}</h3>
@@ -14,7 +14,7 @@
         </div>
       </ng-container>
       </div>
-      <a routerLink="/" class="close"><i class="bi bi-x"></i></a>
+      <a routerLink="/"  class="close"><i class="bi bi-x"></i></a>
     </div>
     <hr class="mt-0 mb-3">
     <div class="content">
@@ -22,7 +22,6 @@
         <b  *ngIf="project.content.alert.title != null">
           {{project.content.alert.title}}
         </b>
-
         {{project.content.alert.content}}
       </div>
 
@@ -45,6 +44,8 @@
       <h4 class="mb-0 mt-2">Besluit</h4>
       <hr class="mt-2 mb-3">
       <p>{{project.content.verdict}}</p>
+
+
 
      <ng-container *ngIf="project.content.attachments.length > 0">
        <h4 class="mb-0">Bijlage</h4>

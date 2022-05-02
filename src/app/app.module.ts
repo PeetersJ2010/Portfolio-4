@@ -41,8 +41,6 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     ScrollSpyModule,
     MdbCarouselModule,
-
-
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

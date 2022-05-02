@@ -22,8 +22,6 @@ export class NavComponent implements OnInit {
     );
   }
 
-
-
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;

@@ -29,4 +29,7 @@ export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet?.activatedRouteData?.['animation'];
   }
+
+
 }
+
