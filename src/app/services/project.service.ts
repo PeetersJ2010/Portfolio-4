@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import { AttachmentTypes } from '../interfaces/attachment';
-import {Project} from "../interfaces/project";
+import {LanguageType, LanguageTypes, Project} from "../interfaces/project";
 
 @Injectable({
   providedIn: 'root'
@@ -16,14 +16,20 @@ export class ProjectService {
 
       content: {
         about:
-          "Tijdens mijn derde jaar in de professionele bachelor opleiding Application Development op Thomas More in Geel, kregen alle studenten de opdracht om in groep een webshop te maken in Angular en een backend naar keuze. Samen met mijn groep hadden we gekozen voor de combinatie van Angular en een .NET backend omdat de opdrachtgever, Michiel van dotNET lab was, en hij een sterke voorkeur hiervoor had." +
+          "Tijdens mijn derde jaar in de professionele bachelor opleiding Application Development op Thomas More in Geel, kregen alle studenten de opdracht om in groep een webshop te maken in Angular en een back-end naar keuze. Samen met mijn groep hadden we gekozen voor de combinatie van Angular en een .NET back-end omdat de opdrachtgever, Michiel van dotNET lab was, en hij een sterke voorkeur hiervoor had." +
           "\n\n" +
-          "Er werden een heleboel eisen opgesteld door dotNet lab en omdat we maar 3 weken de tijd hadden gekregen, moesten we alles op alles zetten. De eisen waren onder andere een overzicht van de producten, detail pagina's, winkelmandje, beheren van producten en nog veel meer. Het thema van de webshop was voor iedereen hetzelfde, namelijk een webshop voor sportvoeding en accessoires. Aangevuld met deze basis eisen, kwamen er nog een aantal nice to haves aan bod zoals paginatien, superadmin rol, suggesties uit vorige aankopen, ..."
+          "Er werden een heleboel eisen opgesteld door dotNet lab en omdat we maar 3 weken de tijd hadden gekregen, moesten we alles op alles zetten. De eisen waren onder andere een overzicht van de producten, detail pagina's, winkelmandje, beheren van producten en nog veel meer. Het thema van de webshop was voor iedereen hetzelfde, namelijk een webshop voor sportvoeding en accessoires. Aangevuld met deze basis eisen, kwamen er nog een aantal nice-to-haves aan bod zoals pagination, superadmin rol, suggesties uit vorige aankopen, ..."
         ,
-        contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot op een mooi resultaat kunnen afwerken. We hebben alle basis eisen en nice to haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle scherm ontwerpen gemaakt als prototype en hierna geprogrammeerd en ook nog een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
+        contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot op een mooi resultaat kunnen afwerken. We hebben alle basis eisen en nice-to-haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle scherm ontwerpen gemaakt als prototype en hierna geprogrammeerd en ook nog een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
         images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg"],
         verdict: "Met deze opdracht zijn we als eerste beëindigd voor de Angular challenge. Natuurlijk zijn we allemaal heel trots op het teamwerk en de webshop zelf. Na deze opdracht kan ik toch wel zelfzeker zeggen dat ik thuis hoor in de front-end. Angular is een zeer tof framework om in te werken en zeker iets waar ik naar de toekomst zal uitkijken.",
-        attachments: []
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.dotNet,
+          LanguageTypes.csharp
+        ]
       },
 
       year: "2021-2022",
@@ -37,11 +43,15 @@ export class ProjectService {
       subTitle: "Project Angular: ToDo App",
 
       content: {
-        about: "Tijdens mijn derde jaar, in de professionele bachelor opleiding, Application Development op Thomas More in Geel, kregen alle studenten de opdracht om een todo applicatie te maken in Angular. Het score op deze opdracht bepaalde dan de groepjes voor de Angular Challenge die hierna volgde.",
-        contribution: "",
-        images: [""],
-        verdict: "",
-        attachments: []
+        about: "Tijdens mijn derde jaar, in de professionele bachelor opleiding, Application Development op Thomas More in Geel, kregen alle studenten de opdracht om een Todo applicatie te maken in Angular. De score hierop bepaalde de groepjes voor de Angular Challenge die hierna volgde. Hierdoor wist ik dat ik alles op alles moest zetten, zodat ik tijdens de Angular Challenge bij een goed groepje zou zitten. Deze challenge is, naar mijn mening, de op 1 na meest belangrijke opdracht van de opleiding. Door mijn goed resultaat, ben ik beland in het beste groepje en ben ik hiermee op de eerste plaats geëindigd in de Angular Challenge.",
+        contribution: "In de Todo app krijgt de gebruiker links een lijst te zien waarop alle todo lijsten te zien zijn. In het midden opent een lijst met alle todo's wanneer er een todo lijst wordt geselecteerd. Tot slot krijgen we rechts een scherm te zien waarop alle todo's staan waarvan de datum binnenkort vervalt.",
+        images: ["Scherm1.jpg", "Scherm2.jpg"],
+        verdict: "Hard werk loont. Zelf ben ik uiterst tevreden met mijn Todo app. Ook al was het maar een kleine opdracht, bewijst het nogmaal dat ik niet graag halfslachtig werk oplever.",
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts
+        ]
       },
 
       year: "2021-2022",
@@ -55,9 +65,9 @@ export class ProjectService {
       subTitle: "Website voor een barbershop in Zandhoven",
 
       content: {
-        about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Als taak kreeg ik voor dit project een nieuwe huisstijl creëren samen met een website. Vooraf dit project bezat ROOTZ reeds van een reservatie systeem dat uitstekend werkte waardoor we dit konden herinplementeren in de nieuwe website.\n" +
+        about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Als taak kreeg ik om een nieuwe huisstijl te creëren samen met een website. Vooraf dit project bezat ROOTZ reeds van een reservatie systeem dat uitstekend werkte waardoor we dit opnieuw konden implementeren op de nieuwe website.\n" +
           "\n" +
-          "Ik ben begonnen met het ontwerpen van een nieuw logo en de basis layout van de nieuwe website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik beginnen programmeren. De website ging een onepager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
+          "Ik ben begonnen met het ontwerpen van een nieuw logo en de basis lay-out van de nieuwe website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik beginnen met programmeren. De website ging een one pager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
           "Het resultaat kunt u onderaan bekijken.",
         contribution: "Van logo to website heb ik alles zelf gemaakt, maar ik heb Nick, de eigenaar, altijd een aantal ontwerpen gegeven waaruit hij de best passende opties heeft gekozen. Voor deze website is er geen onderhoud nodig dus dit heb ik volledig overgelaten aan Nick, maar als er technische problemen zijn, mag hij mij altijd contacteren.",
         images: [
@@ -74,18 +84,13 @@ export class ProjectService {
             name: "Website",
             url: "https://www.rootzbarber.com/",
             type: AttachmentTypes.website
-          },
-          {
-            name: "Download",
-            url: "https://www.rootzbarber.com/",
-            type: AttachmentTypes.download
-          },
-          {
-            name: "Github",
-            url: "https://www.rootzbarber.com/",
-            type: AttachmentTypes.github
-          },
+          }
         ],
+        languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js
+        ]
       },
       year: "2020-2021",
       img: "rootz.jpg",
@@ -112,7 +117,14 @@ export class ProjectService {
           "Scherm5.jpg",
         ],
         verdict: "Dit project is gebouwd op het Laravel framework, wat een nieuwe ervaring was voor mij. Het was ook de eerste keer dat ik met een web framework een webapplicatie heb gebouwd. Deze ervaring heeft mij veel bijgeleerd, niet alleen op technisch vlak, maar ook wat ik later wil doen na mijn opleiding: webapplicaties ontwikkelen.",
-        attachments: [{name: "Web applicatie", url: "https://wka.sinners.be/", type: AttachmentTypes.website}]
+        attachments: [{name: "Web applicatie", url: "https://wka.sinners.be/", type: AttachmentTypes.website}],
+        languages: [
+          LanguageTypes.laravel,
+          LanguageTypes.php,
+
+
+        ]
+
       },
 
       year: "2020-2021",
@@ -124,11 +136,10 @@ export class ProjectService {
       id: "wpf",
       title: "WPF Schaken",
       subTitle: "WPF applicatie bordspel: schaken",
-
       content: {
         about: "Tijdens mijn tweede jaar in de opleiding Application Development, kreeg ik de opdracht om een bordspel te maken voor de WPF cursus. We mochten zelf kiezen welk bordspel we gingen maken, en ik heb hierbij gekozen om het schaakspel te maken. Het spel moest minstens twee CRUD pagina's bevatten en er moest een link gelegd worden naar een Azure databank waarin we al onze gegevens opslaan.\n" +
           "\n" +
-          "WPF staat voor Windows Presentation Foundation en is al één van de oudere frameworks maar wordt tot op vandaag de dag nog altijd gebruikt. Wij hebben gewerkt met het MVVM (Model-View-ViewModel) patroon wat een logische structuur geeft en de code onderhoudbaar maakt.",
+          "WPF staat voor Windows Presentation Foundation en is al een van de oudere frameworks maar wordt tot op vandaag de dag nog altijd gebruikt. Wij hebben gewerkt met het MVVM (Model-View-ViewModel) patroon wat een logische structuur geeft en de code onderhoudbaar maakt.",
         contribution: "Het schaakspel zelf werkt volledig. Je moet alleen samen op hetzelfde scherm spelen, maar dit was ook niet de bedoeling omdat we hier geen funcionaliteiten voor hadden geleerd om dit te realiseren. Verder zijn er nog 2 werkende CRUD's. Op de eerste kan je de spelers beheren. Op de tweede kan je de matchgeschiedenis bekijken en deze eventueel veranderen. Er zijn ook twee verschillende spelmodi namenlijk Ranked en Normal. Bij Ranked zullen de ratings van de spelers veranderen.",
         images: [
           "Scherm1.JPG",
@@ -137,8 +148,12 @@ export class ProjectService {
           "Scherm4.JPG",
           "Scherm5.JPG",
         ],
-        verdict: "Persoonlijk ben ik geen fan van het programmeren met het MVVM patroon. Vergeleken met MVC is dit kinderspel. WPF heeft zijn eigen voor- en nadelen maar ik ben er wel zeker van dat ik dit later in mijn professionele carrière niet meer wil tegenkomen.",
+        verdict: "Persoonlijk ben ik geen fan van het programmeren met het MVVM patroon. Vergeleken met MVC is dit onnodig ingewikkeld. WPF heeft zijn eigen voor- en nadelen maar ik ben er wel zeker van dat ik dit later in mijn professionele carrière niet meer wil tegenkomen. Het leuke aan deze opdracht was zeker en vast de logica uitschrijven over elk schaakstuk.",
         attachments: [{name: "Github", url: "https://github.com/PeetersJ2010/WPF-Schaken", type: AttachmentTypes.website}]
+        ,languages: [
+          LanguageTypes.wpf,
+          LanguageTypes.csharp
+        ]
       },
 
       year: "2020-2021",
@@ -152,6 +167,16 @@ export class ProjectService {
       subTitle: "Website voor een brasserie",
 
       content: {
+        alert: {
+          title: "Update 2022:",
+          content: "In Den Kleyne Doorenboom is overgenomen door De Courant. De vorige website is nog altijd onderaan terug te vinden",
+        },
+        languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js,
+
+        ],
         about: "In Den Kleyne Doorenboom is een brasserie gelegen te Kasterlee. Via een kennis ben ik met de eigenaars in contact gekomen en heb ik zo de opdracht gekregen om de website te vernieuwen. Dit was zeker noodzakelijk omdat de oude website verouderd was. Deze opdracht heb ik met open armen ontvangen. Zo ben ik begonnen met een aantal prototypes te maken zodat ik mezelf kon inleven in de klassieke stijl van de eigenaars en de brasserie zelf.\n" +
           "\n" +
           "Nadat er een overeenkomst was over de stijl van de website, begon het coderen. De website bestaat uit 5 pagina's namelijk: Home, Menu, Foto's, Info en Historiek. Elke pagina volgt de regels van de kunst zoals bijvoorbeeld: een minimale laadtijd, responsiviteit voor mobiele apparaten, error-pagina's, ...",
@@ -163,7 +188,7 @@ export class ProjectService {
           "Scherm4.JPG",
           "Scherm5.JPG",
         ],
-        verdict: "Zowel ikzelf als de uitbaters van Den Doorenboom waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij.",
+        verdict: "Zowel ikzelf als de uitbaters van Den Doorenboom waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij." ,
         attachments: [{name: "Website", url: "https://decourant.be/", type: AttachmentTypes.website}]
       },
 
@@ -189,6 +214,12 @@ export class ProjectService {
         ],
         verdict: "DRForces is nog zeer jong maar heeft vele belovende projecten in haar toekomst. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
         attachments: [{name: "Website", url: "https://drforces.eu/", type:AttachmentTypes.website}]
+        ,languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js,
+
+        ]
       },
 
       year: "2020-2021",
@@ -216,6 +247,10 @@ export class ProjectService {
         attachments: [
           {name: "APK", url: "", type: AttachmentTypes.download},
           {name: "Verslag", url: "", type: AttachmentTypes.download}
+        ],
+        languages: [
+          LanguageTypes.cordova,
+          LanguageTypes.js
         ]
       },
 

@@ -5,6 +5,8 @@ export interface Project {
   title: string;
   subTitle: string;
   content: {
+    alert?: Alert,
+    languages?: LanguageType[],
     about: string,
     contribution: string,
     images: string[],
@@ -15,3 +17,36 @@ export interface Project {
   img: string;
   category: string;
 }
+
+export interface Alert{
+  title?: string;
+  content: string;
+}
+
+export class LanguageType{
+  icon: string;
+  title: string;
+
+  constructor(t: string, i: string){
+    this.icon = "assets/projects/languages/" + i;
+    this.title = t;
+  }
+}
+
+
+
+export class LanguageTypes {
+  static html5 = new LanguageType("Html 5", "html5.png");
+  static scss = new LanguageType("SCSS", "scss.png");
+  static angular = new LanguageType("Angular", "angular.png");
+  static dotNet = new LanguageType(".NET", "dotnet.png");
+  static laravel = new LanguageType("Laravel", "laravel.png");
+  static wpf = new LanguageType("WPF", "wpf.png");
+  static csharp = new LanguageType("C#", "csharp.png");
+  static cordova = new LanguageType("Cordova", "cordova.png");
+  static js = new LanguageType("Javascript", "js.png");
+  static ts = new LanguageType("Typescript", "ts.png");
+  static php = new LanguageType("PHP", "php.png");
+}
+
+

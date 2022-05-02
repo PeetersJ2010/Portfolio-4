@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Project} from "../../interfaces/project";
+import {LanguageTypes, Project} from "../../interfaces/project";
 import {ProjectService} from "../../services/project.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
@@ -37,6 +37,7 @@ export class ProjectDetailComponent implements OnInit {
     if (projectId != null) {
       let projectTemp = this.projectService.getProjectById(projectId) ?? null;
       if (projectTemp != null) {
+        console.log(projectTemp);
         this.project = projectTemp;
       } else {
         this.router.navigate(['/']).then();
