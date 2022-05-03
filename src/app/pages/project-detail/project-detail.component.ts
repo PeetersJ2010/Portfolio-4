@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {LanguageTypes, Project} from "../../interfaces/project";
+import {LanguageTypes, Project, ProjectType} from "../../interfaces/project";
 import {ProjectService} from "../../services/project.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
@@ -14,7 +14,7 @@ import {ViewportScroller} from "@angular/common";
 export class ProjectDetailComponent implements OnInit {
 
   project: Project = {
-    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: "NA",
+    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: new ProjectType(""),
     content: {
       about: "",
       contribution: "",

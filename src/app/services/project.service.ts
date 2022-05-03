@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import { AttachmentTypes } from '../interfaces/attachment';
-import {LanguageType, LanguageTypes, Project} from "../interfaces/project";
+import {LanguageType, LanguageTypes, Project, ProjectType, ProjectTypes} from "../interfaces/project";
 
 @Injectable({
   providedIn: 'root'
@@ -34,8 +34,57 @@ export class ProjectService {
 
       year: "2021-2022",
       img: "shop.jpg",
-      category: "School project"
+      category: ProjectTypes.school
     }
+
+    let projectVierPuntNul: Project = {
+      id: "vierPuntNul",
+      title: "Project 4.0",
+      subTitle: "VanRoey PowerApps tracking systeem",
+      content: {
+        about:
+          "",
+        contribution: "",
+        images: [""],
+        verdict: "",
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.dotNet,
+          LanguageTypes.csharp
+        ]
+      },
+
+      year: "2021-2022",
+      img: "vierPuntNul.jpg",
+      category: ProjectTypes.school
+    }
+
+    let niza: Project = {
+      id: "niza",
+      title: "NiZa klussen",
+      subTitle: "Website voor een klusjesman in Retie",
+      content: {
+        about:
+          "",
+        contribution: "",
+        images: [""],
+        verdict: "",
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.dotNet,
+          LanguageTypes.csharp
+        ]
+      },
+
+      year: "2022-2023",
+      img: "niza.jpg",
+      category: ProjectTypes.website
+    }
+
 
     let todoProject: Project = {
       id: "todo",
@@ -56,7 +105,7 @@ export class ProjectService {
 
       year: "2021-2022",
       img: "todo.jpg",
-      category: "School project"
+      category: ProjectTypes.school
     }
 
     let rootzProject: Project = {
@@ -94,7 +143,7 @@ export class ProjectService {
       },
       year: "2020-2021",
       img: "rootz.jpg",
-      category: "Website"
+      category: ProjectTypes.website
     }
 
     let phpProject: Project = {
@@ -129,7 +178,7 @@ export class ProjectService {
 
       year: "2020-2021",
       img: "php.jpg",
-      category: "School project"
+      category: ProjectTypes.school
     }
 
     let wpfProject: Project = {
@@ -158,7 +207,7 @@ export class ProjectService {
 
       year: "2020-2021",
       img: "wpf.jpg",
-      category: "School project"
+      category: ProjectTypes.school
     }
 
     let idkdProject: Project = {
@@ -194,7 +243,7 @@ export class ProjectService {
 
       year: "2020-2021",
       img: "idkd.png",
-      category: "Website"
+      category: ProjectTypes.website
     }
 
     let drfProject: Project = {
@@ -224,7 +273,7 @@ export class ProjectService {
 
       year: "2020-2021",
       img: "drf.jpg",
-      category: "Website"
+      category: ProjectTypes.website
     }
 
     let caProject: Project = {
@@ -256,10 +305,14 @@ export class ProjectService {
 
       year: "2020-2021",
       img: "ca.jpg",
-      category: "School project"
+      category: ProjectTypes.school
     }
 
+
+
     this.projects.push(shopProject);
+    this.projects.push(projectVierPuntNul);
+    this.projects.push(niza);
     this.projects.push(todoProject);
     this.projects.push(rootzProject);
     this.projects.push(phpProject);
