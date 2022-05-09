@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Project} from "../../interfaces/project";
+import {Project, ProjectType} from "../../interfaces/project";
 
 import {Router} from "@angular/router";
 import {ViewportScroller} from "@angular/common";
@@ -12,7 +12,7 @@ import {ViewportScroller} from "@angular/common";
 export class ProjectCardComponent implements OnInit {
 
   @Input() project: Project = {
-    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: "NA",
+    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: new ProjectType(""),
     content: {
       about: "",
       contribution: "",
