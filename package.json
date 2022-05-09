@@ -28,6 +28,7 @@
     "jquery": "^3.6.0",
     "mdb-angular-ui-kit": "^2.1.0",
     "ng-spy": "^3.0.0",
+    "ng2-animate-on-scroll": "^2.3.2",
     "ngx-bootstrap": "^8.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",

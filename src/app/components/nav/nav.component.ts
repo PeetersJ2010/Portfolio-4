@@ -13,13 +13,13 @@ export class NavComponent implements OnInit {
   isCollapsed : Boolean = true;
 
   constructor(private vpscroller: ViewportScroller, private scrollspyService: ScrollSpyService) {
-    vpscroller.setOffset([0,80]);
+    vpscroller.setOffset([0,150]);
   }
 
   ngOnInit(): void {
-    this.scrollspyService.activeSpyTarget.subscribe(
-      (activeTargetName: string) => console.log(activeTargetName)
-    );
+    // this.scrollspyService.activeSpyTarget.subscribe(
+    //   (activeTargetName: string) => console.log(activeTargetName)
+    // );
   }
 
   @HostListener('window:scroll', ['$event'])

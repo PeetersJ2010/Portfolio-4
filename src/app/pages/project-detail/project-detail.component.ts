@@ -37,7 +37,6 @@ export class ProjectDetailComponent implements OnInit {
     if (projectId != null) {
       let projectTemp = this.projectService.getProjectById(projectId) ?? null;
       if (projectTemp != null) {
-        console.log(projectTemp);
         this.project = projectTemp;
       } else {
         this.router.navigate(['/']).then();

@@ -18,6 +18,7 @@ import { ProjectAttachmentComponent } from './components/project-attachment/proj
 import {ScrollSpyModule} from "ng-spy";
 import {MdbCarouselModule} from "mdb-angular-ui-kit/carousel";
 import { FooterComponent } from './components/footer/footer.component';
+import {AnimateOnScrollModule} from "ng2-animate-on-scroll";
 
 
 @NgModule({
@@ -41,6 +42,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FormsModule,
     ScrollSpyModule,
     MdbCarouselModule,
+    // import module here
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

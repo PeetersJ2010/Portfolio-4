@@ -1,7 +1,7 @@
 <div class="container">
-  <h2>Projecten</h2>
+  <h2 class="hide-on-init animated-delay-2"  animateOnScroll animationName="animated fadeInLeft">Projecten</h2>
   <div class="row mt-4">
     <app-project-card *ngFor="let project of projects" [project]="project"
-                      class="col-12 col-md-6 col-lg-4"></app-project-card>
+                      class="col-12 col-md-6 col-lg-4 animated-delay-2 hide-on-init" animateOnScroll animationName="animated fadeInUp"></app-project-card>
   </div>
 </div>

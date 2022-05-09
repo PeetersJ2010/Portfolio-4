@@ -169,7 +169,7 @@ export class ProjectService {
       content: {
         alert: {
           title: "Update 2022:",
-          content: "In Den Kleyne Doorenboom is overgenomen door De Courant. De vorige website is nog altijd onderaan terug te vinden",
+          content: "In Den Kleyne Doorenboom is overgenomen door De Courant. De vorige website is nog altijd onderaan terug te vinden.",
         },
         languages: [
           LanguageTypes.html5,
