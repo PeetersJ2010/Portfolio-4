@@ -3,6 +3,7 @@ import {slideInAnimation} from "./animations";
 import {Router, RouterOutlet} from "@angular/router";
 import {ViewportScroller} from "@angular/common";
 import {ScrollSpyService} from "ng-spy";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,11 @@ export class AppComponent {
   // @ViewChild('home') homeElement!: ElementRef;
   // @ViewChild('about') aboutElement!: ElementRef;
 
-  constructor(private spyService: ScrollSpyService) {
+  constructor(private spyService: ScrollSpyService, private meta: Meta) {
+    this.meta.addTags([
+      { name: 'description', content: 'This is the portfolio of Joppe Peeters, a student at the IT-Factory of Thomas More Geel' },
+      { name: 'keywords', content: 'Joppe, Peeters, Portfolio, IT Factory, IT-Factory, Application development, Applicatie ontwikkeling, Student, Angular, HTML, Websites, Projects' }
+    ]);
   }
 
   ngAfterViewInit() {

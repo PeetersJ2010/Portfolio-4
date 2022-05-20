@@ -37,6 +37,32 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
+    let bosteoProject: Project = {
+      id: "bosteo",
+      title: "Foxtrot-Osteopathy",
+      subTitle: "Website voor een dierenosteopaat",
+
+      content: {
+        about:
+        ""
+        ,
+        contribution: "",
+        images: [""],
+        verdict: "",
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+        ]
+      },
+
+      year: "2022-2023",
+      img: "bosteo.jpg",
+      category: ProjectTypes.school
+    }
+
     let projectVierPuntNul: Project = {
       id: "vierPuntNul",
       title: "Project 4.0",
@@ -99,7 +125,9 @@ export class ProjectService {
         attachments: [],
         languages: [
           LanguageTypes.angular,
-          LanguageTypes.ts
+          LanguageTypes.ts,
+          LanguageTypes.html5,
+          LanguageTypes.scss
         ]
       },
 
@@ -311,6 +339,7 @@ export class ProjectService {
 
 
     this.projects.push(shopProject);
+    this.projects.push(bosteoProject);
     this.projects.push(projectVierPuntNul);
     this.projects.push(niza);
     this.projects.push(todoProject);
