@@ -8,10 +8,10 @@
       <small>{{project.year}}</small>
     </div>
     <div class="mt-auto mb-1">
-      <div *ngIf="project.content.verdict != ''" class="project-more" (click)="openProject(project.id)">
+      <div *ngIf="project.visible == true" class="project-more" (click)="openProject(project.id)">
         <i class="bi bi-plus"></i>
       </div>
-      <div *ngIf="project.content.verdict == ''" class="project-more-disabled">
+      <div *ngIf="project.visible == false" class="project-more-disabled">
         <i class="bi bi-plus"></i>
       </div>
     </div>

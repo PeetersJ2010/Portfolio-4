@@ -2,6 +2,7 @@ import {Attachment} from "./attachment";
 
 export interface Project {
   id: string;
+  visible: boolean,
   title: string;
   subTitle: string;
   content: {

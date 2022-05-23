@@ -14,7 +14,7 @@ import {ViewportScroller} from "@angular/common";
 export class ProjectDetailComponent implements OnInit {
 
   project: Project = {
-    id: "NA", img: "NA", year: "NA", subTitle: "NA", title: "NA", category: new ProjectType(""),
+    id: "NA",       visible: false, img: "NA", year: "NA", subTitle: "NA", title: "NA", category: new ProjectType(""),
     content: {
       about: "",
       contribution: "",
