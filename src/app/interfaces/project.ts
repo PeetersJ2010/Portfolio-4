@@ -46,6 +46,10 @@ export class LanguageTypes {
   static js = new LanguageType("Javascript", "js.png");
   static ts = new LanguageType("Typescript", "ts.png");
   static php = new LanguageType("PHP", "php.png");
+
+  static powerapp = new LanguageType("Power Apps", "powerapp.png");
+  static powerautomate = new LanguageType("Power Automate", "powerautomate.png");
+  static azure = new LanguageType("Microsoft Azure", "azure.png");
 }
 
 export class ProjectType{

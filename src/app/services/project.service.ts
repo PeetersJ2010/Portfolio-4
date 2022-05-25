@@ -11,7 +11,7 @@ export class ProjectService {
   constructor() {
     let stageProject: Project = {
       id: "stage",
-      visible: true,
+      visible: false,
       title: "Stage bij Phronesys",
       subTitle: "Herwerken van mobiele applicatie",
 
@@ -56,7 +56,9 @@ export class ProjectService {
           LanguageTypes.angular,
           LanguageTypes.ts,
           LanguageTypes.dotNet,
-          LanguageTypes.csharp
+          LanguageTypes.csharp,
+          LanguageTypes.html5,
+          LanguageTypes.scss,
         ]
       },
 
@@ -124,10 +126,9 @@ export class ProjectService {
         verdict: "Hannes heeft zijn best gedaan, maar uiteindelijk waren er een paar probleempjes met de communicatie tussen de IOT en de database. Omdat onze kant (APP) wel volledige functioneerde, hebben we nog allemaal samen een mooi resultaat kunnen opleveren. Het was ook een zeer unieke kans om samen te werken met VanRoey en om aan de slag te gaan met Power Apps en Power Automate.",
         attachments: [],
         languages: [
-          LanguageTypes.angular,
-          LanguageTypes.ts,
-          LanguageTypes.dotNet,
-          LanguageTypes.csharp
+          LanguageTypes.powerapp,
+          LanguageTypes.powerautomate,
+          LanguageTypes.azure,
         ]
       },
 
