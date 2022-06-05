@@ -44,13 +44,13 @@ export class ProjectService {
 
       content: {
         about:
-          "Tijdens mijn derde jaar in de professionele bachelor opleiding Application Development op Thomas More in Geel, kregen alle studenten de opdracht om in groep een webshop te maken in Angular gekoppeld met een back-end naar keuze. Samen met mijn groep hadden we gekozen voor de combinatie van Angular en .NET." +
+          "Tijdens mijn derde jaar in de professionele bacheloropleiding Application Development op Thomas More in Geel, kregen alle studenten de opdracht om in groep een webshop te maken in Angular, gekoppeld met een back-end naar keuze. Samen met mijn groep hadden we gekozen voor de combinatie van Angular en .NET." +
           "\n\n" +
-          "Er werden een heleboel eisen opgesteld door dotNet lab (de opdrachtgever) en omdat we maar 3 weken de tijd hadden gekregen, moesten we alles op alles zetten om al deze eisen te realiseren. De eisen waren onder andere een overzicht van de producten, detail pagina's, winkelmandje, beheren van producten en nog veel meer. Het thema van de webshop was voor iedereen hetzelfde, namelijk een webshop voor sportvoeding en accessoires. Aangevuld met deze basis eisen, kwamen er nog een aantal nice-to-haves aan bod zoals pagination, superadmin rol, suggesties uit vorige aankopen, ..."
+          "Er werden een heleboel eisen opgesteld door dotNet lab (de opdrachtgever) en omdat we maar 3 weken de tijd hadden gekregen, moesten we alles op alles zetten om al deze eisen te realiseren. De eisen waren onder andere een overzicht van de producten, detail pagina's, winkelmandje, beheren van producten en nog veel meer. Het thema van de webshop was voor iedereen hetzelfde, namelijk een webshop voor sportvoeding en accessoires. Aangevuld met deze basiseisen, kwamen er nog een aantal nice-to-haves aan bod zoals pagination, superadmin rol, suggesties uit vorige aankopen, ..."
         ,
-        contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot op een mooi resultaat afgewerkt. We hebben alle basis eisen en nice-to-haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle schermontwerpen gemaakt als prototype en hierna geprogrammeerd en ook nog een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
+        contribution: "Samen met Jorne Marx, Albert Baffour Awuah, Jens Fillée en Jules Debbaut, hebben we deze opdracht tot een mooi resultaat afgewerkt. We hebben alle basis eisen en nice-to-haves kunnen integreren in de webshop door elks een tandje bij te steken wanneer het nodig was. Zelf was ik verantwoordelijk voor de front-end en huisstijl van de webshop. Zo heb ik alle schermontwerpen gemaakt als prototype en daarna geprogrammeerd. Eveneens werden er een heleboel front-end functionaliteiten toegevoegd zoals de product suggesties, artikel beheer pagina, product overzicht, navigatie, ....",
         images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg"],
-        verdict: "Met deze opdracht zijn we als eerste beëindigd voor de Angular challenge. Natuurlijk zijn we allemaal heel trots op het teamwerk en de webshop zelf. Na deze opdracht kan ik toch wel zelfzeker zeggen dat ik thuis hoor in de front-end. Angular is een zeer tof framework om in te werken en zeker iets waarnaar ik in de toekomst zal uitkijken.",
+        verdict: "Met deze opdracht zijn we als eerst geëindigd voor de Angular challenge. Natuurlijk zijn we allemaal heel trots op het teamwerk en de webshop zelf. Na deze opdracht kan ik toch wel zelfzeker zeggen dat ik thuis hoor in de front-end. Angular is een zeer tof framework om in te werken en zeker iets waarnaar ik in de toekomst zal uitkijken.",
         attachments: [],
         languages: [
           LanguageTypes.angular,
@@ -75,12 +75,12 @@ export class ProjectService {
 
       content: {
         about:
-        "Achter Foxtrot-Osteopathy zit een zelfstandige dierenosteopaat genaamd Barbara. Ze was nog niet zo lang aan het werk en zocht iemand om voor haar een mooie website te maken. Deze opdracht heb ik met open armen ontvangen en ik ben meteen aan de slag gegaan."
+        "Achter Foxtrot-Osteopathy zit een zelfstandige dierenosteopaat genaamd Barbara. Ze was nog niet zo lang aan het werk en zocht iemand om voor haar een mooie website te maken. Deze opdracht heb ik met open armen aangenomen en ik ben meteen aan de slag gegaan."
         + "\n\n" + "Ik ben begonnen met een aantal ontwerpen te maken voor Barbara zodat ik beter kon begrijpen waarnaar ze precies op zoek was. Ze wou namelijk een moderne en minimalistische website."
-        + "\n" + "Ik heb ervoor gekozen om haar website in Angular te bouwen. Dit maakt het onderhouden en uitbreiden van haar website zeer makkelijk voor mij als ontwikkelaar."
+        + "\n" + "Ik heb ervoor gekozen om haar website in Angular te bouwen. Dit maakt het onderhoud en uitbreiden van de website zeer makkelijk voor mij als ontwikkelaar."
         ,
         contribution:
-        "Van ontwerp tot realisatie heb ik alles voor dit project voorzien. Het logo heeft ze alleen door iemand anders laten maken omdat dit buiten mijn expertises valt."
+        "Van ontwerp tot realisatie heb ik alles voor dit project voorzien. Enkel het logo werd door iemand anders ontworpen, omdat dit buiten mijn expertises valt."
         ,
         images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg","Scherm6.jpg"],
         verdict: "Barbara is zeer tevreden met haar nieuwe website." + "\n"
@@ -112,10 +112,10 @@ export class ProjectService {
       subTitle: "VanRoey PowerApps tracking systeem",
       content: {
         about:
-          "In het derde jaar binnen alle keuzerichtingen van de IT-Factory, krijgen alle studenten een opdracht in samenwerking met een bedrijf. De studenten worden in groepen opgedeeld samen met studenten uit andere richtingen. Zo bestaat een groepje uit een 6 tal personen met telkens een persoon uit elke keuzerichting."
-          + "\n\n" + "Elk groepje krijgt ook een andere opdracht gever. Ik had met mijn groepje (Adnane Chentouf (CCS), Charlotte Overeem (APP), Hannes Bervoets (IOT), Miguel Haest (AI) en Robbe Meulemans (CCS)) de opdrachtgever, VanRoey. Wij hadden namelijk de opdracht gekregen om een tracking systeem te maken."
-          + "\n\n" + "Dit tracking systeem zou klanten traceren binnen een ruimte waarin allerlei kiosken staan. Deze gegevens worden opgeslagen in een database en hieruit worden een aantal interessante grafieken gemaakt. Omdat VanRoey graag met microsoft producten werkt, zijn wij aan de slag gegaan met Power Apps en Power Automate voor de applicatie, Power BI voor de grafieken en Azure voor de security en hosting.",
-          contribution: "Samen met Charlotte overeem heb ik de applicatie in Power Apps gemaakt. Hierin kunnen allerlei zaken worden beheerd zoals evenementen, aanwezigheden, locaties, bezoekers, ...",
+          "Binnen alle keuzerichtingen van de IT-factory, krijgen alle derdejaarsstudenten een opdracht in samenwerking met een bedrijf. Samen met studenten uit andere keuzerichtingen, wordt iedereen in diverse groepen opgedeeld. Zo bestaat een groepje uit een 6 tal personen met telkens een persoon uit elke keuzerichting."
+          + "\n\n" + "Elk groepje krijgt ook een andere opdrachtgever. Onze groep (Adnane Chentouf (CCS), Charlotte Overeem (APP), Hannes Bervoets (IOT), Miguel Haest (AI) en Robbe Meulemans (CCS)) mocht een opdracht uitvoeren voor VanRoey, namelijk de realisatie van een tracking systeem."
+          + "\n\n" + "Dit tracking systeem zou klanten traceren binnen een ruimte waarin allerlei kiosken staan. Deze gegevens worden opgeslagen in een database en van hieruit worden een aantal interessante grafieken gecreëerd. Omdat VanRoey graag met microsoft producten werkt, zijn wij aan de slag gegaan met Power Apps en Power Automate voor de applicatie, Power BI voor de grafieken en Azure voor de security en hosting.",
+          contribution: "Samen met Charlotte Overeem heb ik de applicatie in Power Apps gemaakt. Hierin kunnen allerlei zaken worden beheerd zoals evenementen, aanwezigheden, locaties, bezoekers, ...",
         images: [
           "Scherm1.jpg",
           "Scherm2.jpg",
@@ -123,7 +123,7 @@ export class ProjectService {
           "Scherm4.jpg",
           "Scherm5.jpg",
         ],
-        verdict: "Hannes heeft zijn best gedaan, maar uiteindelijk waren er een paar probleempjes met de communicatie tussen de IOT en de database. Omdat onze kant (APP) wel volledige functioneerde, hebben we nog allemaal samen een mooi resultaat kunnen opleveren. Het was ook een zeer unieke kans om samen te werken met VanRoey en om aan de slag te gaan met Power Apps en Power Automate.",
+        verdict: "Hannes heeft zijn best gedaan, maar uiteindelijk waren er een paar probleempjes met de communicatie tussen de IOT en de database. Omdat onze kant (APP) wel volledig functioneerde, hebben we nog allemaal samen een mooi resultaat kunnen opleveren. Het was ook een zeer unieke kans om samen te werken met VanRoey en om aan de slag te gaan met Power Apps en Power Automate.",
         attachments: [],
         languages: [
           LanguageTypes.powerapp,
@@ -169,10 +169,10 @@ export class ProjectService {
       subTitle: "Project Angular: ToDo App",
 
       content: {
-        about: "Tijdens mijn derde jaar, in de professionele bachelor opleiding, Application Development op Thomas More in Geel, kregen alle studenten de opdracht om een Todo applicatie te maken in Angular. De score hierop bepaalde de groepjes voor de Angular Challenge die hierna volgde. Hierdoor wist ik dat ik alles op alles moest zetten, zodat ik tijdens de Angular Challenge bij een goed groepje zou zitten. Deze challenge is, naar mijn mening, de op 1 na meest belangrijke opdracht van de opleiding. Door mijn goed resultaat, ben ik beland in het beste groepje en ben ik hiermee op de eerste plaats geëindigd in de Angular Challenge.",
-        contribution: "In de Todo app krijgt de gebruiker links een lijst te zien waarop alle todo lijsten te zien zijn. In het midden opent een lijst met alle todo's wanneer er een todo lijst wordt geselecteerd. Tot slot krijgen we rechts een scherm te zien waarop alle todo's staan waarvan de datum binnenkort vervalt.",
+        about: "Tijdens mijn derde jaar in de professionele bacheloropleiding, Application Development op Thomas More in Geel, kregen alle studenten de opdracht om een ToDo applicatie te maken in Angular. De score hierop bepaalde de teams voor de Angular Challenge die hierna volgde. Hierdoor wist ik dat ik alles op alles moest zetten, zodat ik tijdens de Angular Challenge bij een performante groep zou zitten. Deze challenge is, naar mijn mening, de op 1 na meest belangrijke opdracht van de opleiding. Dankzij mijn goede score en de daaruitvolgende deelname aan het beste team, ben ik op de eerste plaats geëindigd in de Angular Challenge.",
+        contribution: "In de ToDo app krijgt de gebruiker links een lijst te zien waarop alle ToDo lijsten te zien zijn. In het midden opent een lijst met alle ToDo's wanneer er een ToDo lijst wordt geselecteerd. Tot slot krijgen we rechts een scherm te zien waarop alle ToDo's staan waarvan de datum binnenkort vervalt.",
         images: ["Scherm1.jpg", "Scherm2.jpg"],
-        verdict: "Hard werk loont. Zelf ben ik uiterst tevreden met mijn Todo app. Ook al was het maar een kleine opdracht, bewijst het nogmaal dat ik niet graag halfslachtig werk oplever.",
+        verdict: "Hard werk loont. Zelf ben ik uiterst tevreden met mijn ToDo app. Ook al was het maar een kleine opdracht, bewijst het nogmaals dat ik niet graag halfslachtig werk oplever.",
         attachments: [],
         languages: [
           LanguageTypes.angular,
@@ -194,11 +194,11 @@ export class ProjectService {
       subTitle: "Website voor een barbershop in Zandhoven",
 
       content: {
-        about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Ik kreeg de taak om een nieuwe huisstijl te creëren samen met een website. Vooraf dit project bezat ROOTZ reeds van een reservatie systeem dat uitstekend werkte waardoor we dit opnieuw konden implementeren op de nieuwe website.\n" +
+        about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Ik kreeg de taak om een nieuwe huisstijl te creëren samen met een website. Vóór dit project had ROOTZ reeds een reservatiesysteem dat uitstekend werkte waardoor we dit opnieuw konden implementeren op de nieuwe website.\n" +
           "\n" +
-          "Ik ben begonnen met het ontwerpen van een nieuw logo en de basis lay-out van de website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik beginnen te programmeren. De website ging een one pager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
+          "Ik ben gestart met het ontwerpen van een nieuw logo en de basis lay-out van de website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik starten met het programmeren. De website ging een one pager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
           "Het resultaat kunt u onderaan bekijken.",
-        contribution: "Van logo to website heb ik alles zelf gemaakt. Ook heb ik Nick, de eigenaar, vaak een aantal ontwerpen gegeven waaruit hij de best passende opties heeft gekozen. Voor deze website is er geen onderhoud nodig dus dit heb ik volledig overgelaten aan Nick, maar als er technische problemen zijn, mag hij mij altijd contacteren.",
+        contribution: "Van logo tot website heb ik alles zelf gerealiseerd. Ook heb ik Nick, de eigenaar, vaak een aantal ontwerpen gegeven waaruit hij de best passende opties heeft gekozen. Voor deze website is er geen onderhoud nodig dus dit heb ik volledig overgelaten aan Nick, maar als er technische problemen zijn, mag hij mij altijd contacteren.",
         images: [
           "Scherm1.jpg",
           "Scherm2.jpg",
@@ -233,12 +233,12 @@ export class ProjectService {
       subTitle: "Web applicatie voor een freerunning club",
 
       content: {
-        about: "Tijdens mijn tweede jaar in de opleiding Application Development, kregen ik en mijn 4 teamgenoten de opdracht om een project uit te werken voor een klant. Ter voorbereiding kregen we een analyse rapport waaruit we alle nodige informatie moesten halen over de functionaliteiten, gevolgd door een reeks van gesprekken met onze opdracht gever, Ward Kerkhofs.\n" +
+        about: "Tijdens mijn tweede jaar in de opleiding Application Development, kregen mijn 4 teamgenoten en ik de opdracht om een project uit te werken voor een klant. Ter voorbereiding kregen we een analyserapport waaruit we alle nodige informatie moesten halen over de functionaliteiten, gevolgd door een reeks van gesprekken met onze opdracht gever, Ward Kerkhofs.\n" +
           "\n" +
           "Het project is een webapplicatie ontwikkeld in het Laravel framework, dat zou dienen voor een freerunning club. In deze club is Ward de voorzitter maar hij regelde nog alles zelf op papier. Vandaar kregen we de opdracht om al deze processen en functionaliteiten in een moderne applicatie te steken. Hierin zit bijvoorbeeld een login functionaliteit, een 15 tal CRUD's om gegevens te beheren en een webshop.\n" +
           "\n" +
           "Dit project is gemaakt in samenwerking met: Seppe Geudens (Team lead), Helder Ceyssens (Document lead), Volkert Moreels en Matthias Van de Poel.",
-        contribution: "Aan het begin van onze eerste sprint, werden alle functionaliteiten in issues opgedeeld die dan werden toegewezen aan elks van ons. De bedoeling was dat als je klaar bent met een issue, dat je aan de volgende begint (SCRUM). De issues die ik op mij heb genomen, hebben allemaal te maken met de Webshop, Gebruikers CRUD, Artikelen CRUD, Bestelperiodes CRUD en de navigatie. Hiernaast was ik ook verantwoordelijk voor de huisstijl van het project.",
+        contribution: "Aan het begin van onze eerste sprint, werden alle functionaliteiten in issues opgedeeld die dan werden toegewezen aan elk van ons. De bedoeling was dat als je klaar bent met een issue, dat je aan de volgende begint (SCRUM). De issues die ik op mij heb genomen, hebben allemaal te maken met de Webshop, Gebruikers CRUD, Artikelen CRUD, Bestelperiodes CRUD en de navigatie. Hiernaast was ik ook verantwoordelijk voor de huisstijl van het project.",
         images: [
           "Scherm1.jpg",
           "Scherm2.jpg",
@@ -268,9 +268,9 @@ export class ProjectService {
       title: "WPF Schaken",
       subTitle: "WPF applicatie bordspel: schaken",
       content: {
-        about: "Tijdens mijn tweede jaar in de opleiding Application Development, kreeg ik de opdracht om een bordspel te maken voor de WPF cursus. We mochten zelf kiezen welk bordspel we gingen maken, en ik heb hierbij gekozen om het schaakspel te maken. Het spel moest minstens twee CRUD pagina's bevatten en er moest een link gelegd worden naar een Azure databank waarin we al onze gegevens opslaan.\n" +
+        about: "Tijdens mijn tweede jaar in de opleiding Application Development, kreeg ik de opdracht om een bordspel te maken voor de WPF cursus. We mochten zelf kiezen welk bordspel we gingen maken, en mijn keuze ging uit naar het schaakspel. Het spel moest minstens twee CRUD pagina's bevatten en er moest een link gelegd worden naar een Azure databank waarin we al onze gegevens opslaan.\n" +
           "\n" +
-          "WPF staat voor Windows Presentation Foundation en is al een van de oudere frameworks maar wordt tot op vandaag de dag nog altijd gebruikt. Wij hebben gewerkt met het MVVM (Model-View-ViewModel) patroon wat een logische structuur geeft en de code onderhoudbaar maakt.",
+          "WPF staat voor Windows Presentation Foundation en is al één van de oudere frameworks maar wordt tot op vandaag de dag nog altijd gebruikt. Wij hebben gewerkt met het MVVM (Model-View-ViewModel) patroon wat een logische structuur geeft en de code onderhoudbaar maakt.",
         contribution: "Het schaakspel zelf werkt volledig. Je moet alleen samen op hetzelfde scherm spelen, maar dit was ook niet de bedoeling omdat we hier geen funcionaliteiten voor hadden geleerd om dit te realiseren. Verder zijn er nog 2 werkende CRUD's. Op de eerste kan je de spelers beheren. Op de tweede kan je de matchgeschiedenis bekijken en deze eventueel veranderen. Er zijn ook twee verschillende spelmodi namenlijk Ranked en Normal. Bij Ranked zullen de ratings van de spelers veranderen.",
         images: [
           "Scherm1.JPG",
@@ -320,7 +320,7 @@ export class ProjectService {
           "Scherm4.JPG",
           "Scherm5.JPG",
         ],
-        verdict: "Zowel ikzelf als de uitbaters van Den Doorenboom waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij." ,
+        verdict: "Zowel de uitbaters van Den Doorenboom als ikzelf waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij." ,
         attachments: [{name: "Website", url: "https://decourant.be/", type: AttachmentTypes.website}]
       },
 
@@ -336,8 +336,8 @@ export class ProjectService {
       subTitle: "Website voor een drone hobbypiloot",
 
       content: {
-        about: "DRForces is een klein bedrijf gelegen te Kasterlee dat zich specialiseert in consultng, drone piloting en web design. Ik heb voor dit bedrijf een website gemaakt om dit te promoten en omdat ze er nog geen hadden. Op de start pagina kunt u kiezen uit de 3 onderwerpen; consulting, drone piloting en web design. Elk onderdeel heeft zijn eigen sub html pagina waarin hierover uitleg wordt gegeven. Momenteel is alleen het webdesign gedeelte volledig uitgewerkt, maar de andere 2 onderwerpen zullen dezelfde layout krijgen met andere content.",
-        contribution: "We hebben samen de website ontworpen en dan ben ik zelf aan slag gegaan met het coderen. Hieronder staan een aantal foto's van het eindresultaat van de web design pagina.",
+        about: "DRForces is een klein bedrijf gelegen te Kasterlee dat zich specialiseert in consulting, drone piloting en webdesign. Ik heb voor dit bedrijf een website gemaakt ter promotie en uit noodzaak. Op de startpagina kunt u kiezen uit de 3 onderwerpen; consulting, drone piloting en web design. Elk onderdeel heeft zijn eigen sub html pagina waarin hierover uitleg wordt gegeven. Momenteel is alleen het webdesign gedeelte volledig uitgewerkt, maar de andere 2 onderwerpen zullen dezelfde layout krijgen met andere content.",
+        contribution: "We hebben samen de website ontworpen en dan ben ik zelf aan slag gegaan met het coderen. Hieronder staan een aantal foto's van het eindresultaat van de webdesign pagina.",
         images: [
           "Scherm1.jpg",
           "Scherm2.jpg",
@@ -345,7 +345,7 @@ export class ProjectService {
           "Scherm4.jpg",
           "Scherm5.jpg",
         ],
-        verdict: "DRForces is nog zeer jong maar heeft vele belovende projecten in haar toekomst. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
+        verdict: "DRForces is nog jong maar heeft veel beloftevolle projecten in het vooruitzicht. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
         attachments: [{name: "Website", url: "https://drforces.eu/", type:AttachmentTypes.website}]
         ,languages: [
           LanguageTypes.html5,
@@ -377,7 +377,7 @@ export class ProjectService {
           "Scherm3.jpg",
           "Scherm4.jpg",
         ],
-        verdict: "Dit was de eerste keer dat ik een volledig mobiele app heb geschreven. Door middel van jQuery en Javascript heb ik de mogelijkheden ontdekt van het Cordova framework. Ook heb ik nieuwe inzichten gekregen op het gebruiken van de meta data van .mp3 bestanden.",
+        verdict: "Dit was de eerste keer dat ik een volledig mobiele app heb geschreven. Door middel van jQuery en Javascript heb ik de mogelijkheden ontdekt van het Cordova framework. Ook heb ik nieuwe inzichten gekregen in het gebruiken van de meta data van .mp3 bestanden.",
         attachments: [
           {name: "APK", url: "", type: AttachmentTypes.download},
           {name: "Verslag", url: "", type: AttachmentTypes.download}

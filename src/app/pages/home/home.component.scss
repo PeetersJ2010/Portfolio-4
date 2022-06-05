@@ -21,6 +21,23 @@
     height: 100vh;
     z-index: 10;
 
+    .top-pill{
+      background-color: rgba( darken( $primary,40),0.2  );
+      color: lighten($primary,10);
+      //color: #C8F0CC;
+      width: fit-content;
+      padding: 2px 14px;
+      border-radius: 50px;
+    }
+
+    //.top-pill{
+    //  background-color: rgba( black , 0.20  );
+    //  color: $primary;
+    //  //color: #C8F0CC;
+    //  width: fit-content;
+    //  padding: 2px 14px;
+    //  border-radius: 50px;
+    //}
 
 
     h1, p{
@@ -28,12 +45,13 @@
       margin-bottom: 0;
     }
     h1{
-      font-size: 4.2rem;
+      font-size: 4.0rem;
       letter-spacing: 2px;
-
+      margin-bottom: 8px;
     }
     p{
-      font-size: 1.4rem;
+      font-size: 1.1rem;
+      line-height: 20px;
     }
 
     .socials{
