@@ -1,6 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {ViewportScroller} from "@angular/common";
 import {ScrollSpyService} from "ng-spy";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,7 +13,7 @@ export class NavComponent implements OnInit {
 
   isCollapsed : Boolean = true;
 
-  constructor(private vpscroller: ViewportScroller, private scrollspyService: ScrollSpyService) {
+  constructor(private vpscroller: ViewportScroller, private scrollspyService: ScrollSpyService, public router: Router) {
     vpscroller.setOffset([0,150]);
   }
 

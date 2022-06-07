@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm nav-top fixed-top">
-  <div class="container justify-content-end">
+  <div class="container justify-content-between">
     <a class="navbar-brand" href="#">
       <img src="/assets/logo-white.png" alt="Logo Primal-Design">
     </a>
@@ -21,8 +21,9 @@
         <li class="nav-item">
           <a class="nav-link hide-on-init animated-delay-2" (click)="scroll('about')" data-bs-toggle="collapse" data-bs-target="#navbarNav.show" animateOnScroll animationName="animated fadeIn">Over mezelf</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link hide-on-init animated-delay-3" (click)="scroll('projects')" data-bs-toggle="collapse" data-bs-target="#navbarNav.show" animateOnScroll animationName="animated fadeIn">Stage</a>
+          <a class="nav-link hide-on-init animated-delay-3" (click)="scroll('projects')" [routerLink]="(this.router.url != '/') ? ['/'] : ['/projects/stage']"  data-bs-toggle="collapse" data-bs-target="#navbarNav.show" animateOnScroll animationName="animated fadeIn">Stage</a>
         </li>
         <li class="nav-item">
           <a class="nav-link hide-on-init animated-delay-4" (click)="scroll('projects')" routerLink="/" data-bs-toggle="collapse" data-bs-target="#navbarNav.show" animateOnScroll animationName="animated fadeIn">Projecten</a>

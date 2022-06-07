@@ -11,13 +11,13 @@ export class ProjectService {
   constructor() {
     let stageProject: Project = {
       id: "stage",
-      visible: false,
+      visible: true,
       title: "Stage bij Phronesys",
       subTitle: "Herwerken van mobiele applicatie",
 
       content: {
         about:
-        ""
+        "Tussen 5 maart 2018 en 1 juni 2018 liep ik gedurende 13 weken stage bij ASML"
         ,
         contribution: "",
         images: [""],
