@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import { AttachmentTypes } from '../interfaces/attachment';
+import { AttachmentType, AttachmentTypes } from '../interfaces/attachment';
 import {LanguageType, LanguageTypes, Project, ProjectType, ProjectTypes} from "../interfaces/project";
 
 @Injectable({
@@ -16,18 +16,36 @@ export class ProjectService {
       subTitle: "Herwerken van mobiele applicatie",
 
       content: {
+        // image: "phronesysLogo.png",
+        image: "",
         about:
-        "Tussen 5 maart 2018 en 1 juni 2018 liep ik gedurende 13 weken stage bij ASML"
+        "Tussen 28 februari 2022 en 27 mei 2022 liep ik gedurende 13 weken stage bij Phronesys. Zij hebben een uitgebreide expertise binnen de domeinen kwaliteit, veiligheid, milieu, voedselveiligheid, informatiebeveiliging en energie. Deze expertise hebben ze gebruikt bij het maken van een applicatie, voor zowel web als mobiel, die bedrijven helpt bij het digitaal beheren van hun SHEQ certificaten en processen. Naast een uitgebreid software pakket, bieden ze ook SHEQ consulting aan. \n\n Sinds kort heeft Phronesys haar mobiele applicatie gemigreerd van Cordova naar Flutter. Omdat beide frameworks enorm verschillen, is de migratie van het ene naar het andere niet zo vanzelfsprekend. De eerste stap is natuurlijk om alle noodzakelijke functionaliteiten te voorzien; een basisversie van de app. Dit was ook het startpunt van mijn stageopdracht. De tweede stap, en mijn stageopdracht, is het visueel herwerken van de app om zo de gebruiksvriendelijkheid en aantrekkelijkheid op het niveau te brengen van de webapplicatie.  \n\n De mobiele app bevat momenteel 18 modules. Elke module dient voor het beheren van een bepaald onderwerp zoals WPI's, LMRA's, Toolboxen, ... De meeste van deze modules bevatten een overzicht, een detailpagina en een pagina voor het toevoegen."
         ,
-        contribution: "",
-        images: [""],
-        verdict: "",
-        attachments: [],
+        contribution: "Mijn oorspronkelijke opdracht was om alleen de overzichten te herwerken binnen de app, maar aangezien deze opdracht al na 3 weken af was, vroeg ik aan mijn stagementor om eventueel ook andere schermen te herwerken. Uiteindelijk heb ik alle 55 schermen van de app mogen herwerken. Naast het herwerken van schermen heb ik ook enkele handige functionaliteiten mogen toevoegen aan de app zoals de mogelijkheid om te zoeken en sorteren op de overzichten, laadschermen, errorpagina's, internationalisatie en favorieten toevoegen. Tot slot heb ik ook een aantal illustraties gemaakt die getoond worden op de errorpagina's.",
+        images: ["Scherm3.jpg", "Scherm4.jpg","Scherm5.jpg", "Scherm2.jpg"],
+        verdict: "Ik heb deze stageopdracht gekozen om wat meer over Flutter bij te leren in plaats van weeral kennis te maken met een nieuw front-end framework. Achteraf bekeken kan ik met vol vertrouwen zeggen dat dit een goede beslissing was. Ik heb veel bijgeleerd, niet alleen op vlak van Flutter, maar ook hoe een grotere applicatie wordt opgebouwd en onderhouden. \n\n Onderaan vindt u de documenten die ik in het kader van mijn stage heb gemaakt en die dieper ingaan op bepaalde aspecten hiervan.",
+        attachments: [
+          {
+            name: "Plan van aanpak",
+            url: "assets/download/pva-joppepeeters.pptx",
+            type: AttachmentTypes.pdf
+          },
+          {
+            name: "Realisatie document",
+            url: "assets/download/realisatiedocument-joppepeeters.pdf",
+            type: AttachmentTypes.pdf
+          },
+          {
+            name: "Reflectie verslag",
+            url: "",
+            type: AttachmentTypes.pdf
+          }
+        ],
         languages: [
-          LanguageTypes.angular,
-          LanguageTypes.ts,
-          LanguageTypes.html5,
-          LanguageTypes.scss,
+          LanguageTypes.phronesys,
+          LanguageTypes.flutter,
+          LanguageTypes.dart,
+          LanguageTypes.figma,
         ]
       },
 
@@ -124,7 +142,13 @@ export class ProjectService {
           "Scherm5.jpg",
         ],
         verdict: "Hannes heeft zijn best gedaan, maar uiteindelijk waren er een paar probleempjes met de communicatie tussen de IOT en de database. Omdat onze kant (APP) wel volledig functioneerde, hebben we nog allemaal samen een mooi resultaat kunnen opleveren. Het was ook een zeer unieke kans om samen te werken met VanRoey en om aan de slag te gaan met Power Apps en Power Automate.",
-        attachments: [],
+        attachments: [
+          {
+            name: "Demo",
+            url: "https://www.youtube.com/watch?v=9LS4RN-85lY",
+            type: AttachmentTypes.youtube
+          }
+        ],
         languages: [
           LanguageTypes.powerapp,
           LanguageTypes.powerautomate,

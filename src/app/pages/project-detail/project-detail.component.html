@@ -24,6 +24,9 @@
         </b>
         {{project.content.alert.content}}
       </div>
+      <!-- <ng-container *ngIf="project.content.image != null">
+        <img  class="project-img" src="{{'assets/projects/' + project.id + '/' + project.content.image}}" alt="{{project.content.image}}">
+      </ng-container> -->
 
       <p>{{project.content.about}}</p>
       <h4 class="mb-0">Mijn bijdrage</h4>
@@ -34,7 +37,7 @@
         <mdb-carousel-item *ngFor="let image of project.content.images">
           <div class="picsum-img-wrapper">
             <img
-              [ngClass]="{'w-25' : project.id == 'ca' || project.id == 'md'}" [src]="'assets/projects/'+ project.id + '/' + image" alt="{{'Image for ' + project.title}}" width="70%" class="img-fluid"
+              [ngClass]="{'w-25' : project.id == 'ca' || project.id == 'md' || project.id == 'stage'}" [src]="'assets/projects/'+ project.id + '/' + image" alt="{{'Image for ' + project.title}}" width="70%" class="img-fluid"
             />
           </div>
         </mdb-carousel-item>

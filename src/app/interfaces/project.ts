@@ -8,6 +8,7 @@ export interface Project {
   content: {
     alert?: Alert,
     languages?: LanguageType[],
+    image?: string,
     about: string,
     contribution: string,
     images: string[],
@@ -46,6 +47,10 @@ export class LanguageTypes {
   static js = new LanguageType("Javascript", "js.png");
   static ts = new LanguageType("Typescript", "ts.png");
   static php = new LanguageType("PHP", "php.png");
+  static flutter = new LanguageType("Flutter", "flutter.png");
+  static dart = new LanguageType("Dart", "dart.png");
+  static figma = new LanguageType("Figma", "figma.png");
+  static phronesys = new LanguageType("Phronesys", "phronesys.png");
 
   static powerapp = new LanguageType("Power Apps", "powerapp.png");
   static powerautomate = new LanguageType("Power Automate", "powerautomate.png");

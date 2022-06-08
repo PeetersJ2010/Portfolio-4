@@ -19,6 +19,9 @@ export class AttachmentTypes {
   static website = new AttachmentType("website", "link-45deg");
   static download = new AttachmentType("download", "download");
   static email = new AttachmentType("email", "envelope");
+  static youtube = new AttachmentType("youtube", "youtube");
+  static pdf = new AttachmentType("pdf", "file-earmark-pdf");
+  static ppt = new AttachmentType("ppt", "filetype-ppt");
 }
 
 
