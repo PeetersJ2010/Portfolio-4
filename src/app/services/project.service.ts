@@ -31,15 +31,22 @@ export class ProjectService {
             type: AttachmentTypes.pdf
           },
           {
+            name: "Planning stage",
+            url: "assets/download/planning-joppepeeters.PNG",
+            type: AttachmentTypes.img
+          },
+          {
             name: "Realisatie document",
             url: "assets/download/realisatiedocument-joppepeeters.pdf",
             type: AttachmentTypes.pdf
           },
+
           {
             name: "Reflectie verslag",
-            url: "",
+            url: "assets/download/reflectie-joppepeeters.pdf",
             type: AttachmentTypes.pdf
-          }
+          },
+
         ],
         languages: [
           LanguageTypes.phronesys,
@@ -421,15 +428,15 @@ export class ProjectService {
 
     this.projects.push(stageProject);
     this.projects.push(shopProject);
-    this.projects.push(bosteoProject);
+    //this.projects.push(bosteoProject);
     this.projects.push(projectVierPuntNul);
-    this.projects.push(niza);
+    //this.projects.push(niza);
     this.projects.push(todoProject);
-    this.projects.push(rootzProject);
+    //this.projects.push(rootzProject);
     this.projects.push(phpProject);
     this.projects.push(wpfProject);
-    this.projects.push(idkdProject);
-    this.projects.push(drfProject);
+    //this.projects.push(idkdProject);
+    //this.projects.push(drfProject);
     this.projects.push(caProject);
   }
 

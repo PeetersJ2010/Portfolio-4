@@ -22,6 +22,7 @@ export class AttachmentTypes {
   static youtube = new AttachmentType("youtube", "youtube");
   static pdf = new AttachmentType("pdf", "file-earmark-pdf");
   static ppt = new AttachmentType("ppt", "filetype-ppt");
+  static img = new AttachmentType("image", "card-image");
 }
 
 
