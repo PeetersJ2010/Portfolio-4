@@ -1,8 +1,8 @@
 @import "src/scss/cvariables";
 
 .content{
-  height: 110vh;
-  background: url("~src/assets/wallpaper.jpg");
+  height: 100vh;
+  background: url("~src/assets/wallpaper-2.jpg");
   background-position: center;
   background-size: cover;
 
@@ -17,13 +17,20 @@
 
 
   .hero-main{
-    padding-bottom: 15vh;
+    padding-bottom: 10vh;
     height: 100vh;
     z-index: 10;
 
+    .work{
+      text-decoration: none !important;
+      color: $primary !important;
+    }
+
     .top-pill{
-      background-color: rgba( darken( $primary,40),0.2  );
-      color: lighten($primary,10);
+      background-color: rgba( darken( $primary,10),0.2  );
+      &, *{
+        color: lighten($primary,20) !important;
+      }
       //color: #C8F0CC;
       width: fit-content;
       padding: 2px 14px;
@@ -79,7 +86,7 @@
   }
 
   .waves{
-    background: url("~src/assets/waves.svg");
+    background: url("~src/assets/waves-b.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 10vh;

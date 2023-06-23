@@ -1,3 +1,5 @@
+@import "src/scss/cvariables";
+
 button{
   border-radius: 50px;
 
@@ -11,8 +13,8 @@ button{
 
 .color-website, .color-email, .color-pdf, .color-ppt, .color-image{
   color: whitesmoke;
-  background-color: #90ba93;
-  background-image: linear-gradient(160deg, #90ba93 0%, #72b877 100%);
+  background-color: $primary;
+  background-image: linear-gradient(160deg, $primary 0%, darken($primary, 20%) 100%);
 }
 
 .color-download{

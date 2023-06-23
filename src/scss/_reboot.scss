@@ -60,7 +60,7 @@
    /* scrollbar handle */
    &::-webkit-scrollbar-thumb {
      background-color: $primary;
-     background-image: linear-gradient(to top, #4E797C 0%, #8FB8B5 100%);
+     background-image: linear-gradient(to top, darken($primary, 20%) 0%, $primary 100%);
    }
  }
 //

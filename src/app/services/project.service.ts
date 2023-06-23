@@ -16,7 +16,7 @@ export class ProjectService {
       subTitle: "Herwerken van mobiele applicatie",
 
       content: {
-        // image: "phronesysLogo.png",
+        //image: "phronesysLogo.png",
         image: "",
         about:
         "Tussen 28 februari 2022 en 27 mei 2022 liep ik gedurende 13 weken stage bij Phronesys. Zij hebben een uitgebreide expertise binnen de domeinen kwaliteit, veiligheid, milieu, voedselveiligheid, informatiebeveiliging en energie. Deze expertise hebben ze gebruikt bij het maken van een applicatie, voor zowel web als mobiel, die bedrijven helpt bij het digitaal beheren van hun SHEQ certificaten en processen. Naast een uitgebreid software pakket, bieden ze ook SHEQ consulting aan. \n\n Sinds kort heeft Phronesys haar mobiele applicatie gemigreerd van Cordova naar Flutter. Omdat beide frameworks enorm verschillen, is de migratie van het ene naar het andere niet zo vanzelfsprekend. De eerste stap is natuurlijk om alle noodzakelijke functionaliteiten te voorzien; een basisversie van de app. Dit was ook het startpunt van mijn stageopdracht. De tweede stap, en mijn stageopdracht, is het visueel herwerken van de app om zo de gebruiksvriendelijkheid en aantrekkelijkheid op het niveau te brengen van de webapplicatie.  \n\n De mobiele app bevat momenteel 18 modules. Elke module dient voor het beheren van een bepaald onderwerp zoals WPI's, LMRA's, Toolboxen, ... De meeste van deze modules bevatten een overzicht, een detailpagina en een pagina voor het toevoegen."
@@ -92,43 +92,43 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
-    // let bosteoProject: Project = {
-    //   id: "bosteo",
-    //   visible: true,
-    //   title: "Foxtrot-Osteopathy",
-    //   subTitle: "Website voor een dierenosteopaat",
+    let bosteoProject: Project = {
+      id: "bosteo",
+      visible: true,
+      title: "Foxtrot-Osteopathy",
+      subTitle: "Website voor een dierenosteopaat",
 
-    //   content: {
-    //     about:
-    //     "Achter Foxtrot-Osteopathy zit een zelfstandige dierenosteopaat genaamd Barbara. Ze was nog niet zo lang aan het werk en zocht iemand om voor haar een mooie website te maken. Deze opdracht heb ik met open armen aangenomen en ik ben meteen aan de slag gegaan."
-    //     + "\n\n" + "Ik ben begonnen met een aantal ontwerpen te maken voor Barbara zodat ik beter kon begrijpen waarnaar ze precies op zoek was. Ze wou namelijk een moderne en minimalistische website."
-    //     + "\n" + "Ik heb ervoor gekozen om haar website in Angular te bouwen. Dit maakt het onderhoud en uitbreiden van de website zeer makkelijk voor mij als ontwikkelaar."
-    //     ,
-    //     contribution:
-    //     "Van ontwerp tot realisatie heb ik alles voor dit project voorzien. Enkel het logo werd door iemand anders ontworpen, omdat dit buiten mijn expertises valt."
-    //     ,
-    //     images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg","Scherm6.jpg"],
-    //     verdict: "Barbara is zeer tevreden met haar nieuwe website." + "\n"
-    //     + "“”",
-    //     attachments: [
-    //       {
-    //         name: "Website",
-    //         url: "https://foxtrot-osteopathy.be/",
-    //         type: AttachmentTypes.website
-    //       }
-    //     ],
-    //     languages: [
-    //       LanguageTypes.angular,
-    //       LanguageTypes.ts,
-    //       LanguageTypes.html5,
-    //       LanguageTypes.scss,
-    //     ]
-    //   },
+      content: {
+        about:
+        "Achter Foxtrot-Osteopathy zit een zelfstandige dierenosteopaat genaamd Barbara. Ze was nog niet zo lang aan het werk en zocht iemand om voor haar een mooie website te maken. Deze opdracht heb ik met open armen aangenomen en ik ben meteen aan de slag gegaan."
+        + "\n\n" + "Ik ben begonnen met een aantal ontwerpen te maken voor Barbara zodat ik beter kon begrijpen waarnaar ze precies op zoek was. Ze wou namelijk een moderne en minimalistische website."
+        + "\n" + "Ik heb ervoor gekozen om haar website in Angular te bouwen. Dit maakt het onderhoud en uitbreiden van de website zeer makkelijk voor mij als ontwikkelaar."
+        ,
+        contribution:
+        "Van ontwerp tot realisatie heb ik alles voor dit project voorzien. Enkel het logo werd door iemand anders ontworpen, omdat dit buiten mijn expertises valt."
+        ,
+        images: ["Scherm1.jpg","Scherm2.jpg","Scherm3.jpg","Scherm4.jpg","Scherm5.jpg","Scherm6.jpg"],
+        verdict: "Barbara is zeer tevreden met haar nieuwe website." + "\n"
+        + "“”",
+        attachments: [
+          {
+            name: "Website",
+            url: "https://foxtrot-osteopathy.be/",
+            type: AttachmentTypes.website
+          }
+        ],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+        ]
+      },
 
-    //   year: "2022",
-    //   img: "bosteo.jpg",
-    //   category: ProjectTypes.school
-    // }
+      year: "2022",
+      img: "bosteo.jpg",
+      category: ProjectTypes.school
+    }
 
     let projectVierPuntNul: Project = {
       id: "vierPuntNul",
@@ -168,30 +168,30 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
-    // let niza: Project = {
-    //   id: "niza",
-    //   visible: false,
-    //   title: "NiZa klussen",
-    //   subTitle: "Website voor een klusjesman in Retie",
-    //   content: {
-    //     about:
-    //       "",
-    //     contribution: "",
-    //     images: [""],
-    //     verdict: "",
-    //     attachments: [],
-    //     languages: [
-    //       LanguageTypes.angular,
-    //       LanguageTypes.ts,
-    //       LanguageTypes.dotNet,
-    //       LanguageTypes.csharp
-    //     ]
-    //   },
+    let niza: Project = {
+      id: "niza",
+      visible: false,
+      title: "NiZa klussen",
+      subTitle: "Website voor een klusjesman in Retie",
+      content: {
+        about:
+          "",
+        contribution: "",
+        images: [""],
+        verdict: "",
+        attachments: [],
+        languages: [
+          LanguageTypes.angular,
+          LanguageTypes.ts,
+          LanguageTypes.dotNet,
+          LanguageTypes.csharp
+        ]
+      },
 
-    //   year: "2022",
-    //   img: "niza.jpg",
-    //   category: ProjectTypes.website
-    // }
+      year: "2022",
+      img: "niza.jpg",
+      category: ProjectTypes.website
+    }
 
     let todoProject: Project = {
       id: "todo",
@@ -218,44 +218,44 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
-    // let rootzProject: Project = {
-    //   id: "rootz",
-    //   visible: true,
-    //   title: "ROOTZ barbershop",
-    //   subTitle: "Website voor een barbershop in Zandhoven",
+    let rootzProject: Project = {
+      id: "rootz",
+      visible: true,
+      title: "ROOTZ barbershop",
+      subTitle: "Website voor een barbershop in Zandhoven",
 
-    //   content: {
-    //     about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Ik kreeg de taak om een nieuwe huisstijl te creëren samen met een website. Vóór dit project had ROOTZ reeds een reservatiesysteem dat uitstekend werkte waardoor we dit opnieuw konden implementeren op de nieuwe website.\n" +
-    //       "\n" +
-    //       "Ik ben gestart met het ontwerpen van een nieuw logo en de basis lay-out van de website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik starten met het programmeren. De website ging een one pager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
-    //       "Het resultaat kunt u onderaan bekijken.",
-    //     contribution: "Van logo tot website heb ik alles zelf gerealiseerd. Ook heb ik Nick, de eigenaar, vaak een aantal ontwerpen gegeven waaruit hij de best passende opties heeft gekozen. Voor deze website is er geen onderhoud nodig dus dit heb ik volledig overgelaten aan Nick, maar als er technische problemen zijn, mag hij mij altijd contacteren.",
-    //     images: [
-    //       "Scherm1.jpg",
-    //       "Scherm2.jpg",
-    //       "Scherm3.jpg",
-    //       "Scherm4.jpg",
-    //       "Logo.jpg"
-    //     ],
-    //     verdict: "Nick was zeer tevreden over het eindresultaat.\n" +
-    //       "“Ik ben super tevreden met mijn samenwerking met Joppe. Hij denkt graag mee en schiet ook snel in actie. Enkel maar positieve ervaringen dus!”",
-    //     attachments: [
-    //       {
-    //         name: "Website",
-    //         url: "https://www.rootzbarber.com/",
-    //         type: AttachmentTypes.website
-    //       }
-    //     ],
-    //     languages: [
-    //       LanguageTypes.html5,
-    //       LanguageTypes.scss,
-    //       LanguageTypes.js
-    //     ]
-    //   },
-    //   year: "2020-2021",
-    //   img: "rootz.jpg",
-    //   category: ProjectTypes.website
-    // }
+      content: {
+        about: "ROOTZ - Herenkapper & Barbier is een exclusieve kapperszaak gelegen in het hart van Zandhoven. Ik kreeg de taak om een nieuwe huisstijl te creëren samen met een website. Vóór dit project had ROOTZ reeds een reservatiesysteem dat uitstekend werkte waardoor we dit opnieuw konden implementeren op de nieuwe website.\n" +
+          "\n" +
+          "Ik ben gestart met het ontwerpen van een nieuw logo en de basis lay-out van de website. Na overleg, hadden we het perfecte logo en ontwerp gevonden voor ROOTZ en kon ik starten met het programmeren. De website ging een one pager worden met 5 secties; hero, over ons, aanbiedingen, openingsuren en contact. Natuurlijk is deze website gemaakt met alle moderne regels van de kunst: een minimale laadtijd, responsiviteit voor mobiele apparaten, ...\n" +
+          "Het resultaat kunt u onderaan bekijken.",
+        contribution: "Van logo tot website heb ik alles zelf gerealiseerd. Ook heb ik Nick, de eigenaar, vaak een aantal ontwerpen gegeven waaruit hij de best passende opties heeft gekozen. Voor deze website is er geen onderhoud nodig dus dit heb ik volledig overgelaten aan Nick, maar als er technische problemen zijn, mag hij mij altijd contacteren.",
+        images: [
+          "Scherm1.jpg",
+          "Scherm2.jpg",
+          "Scherm3.jpg",
+          "Scherm4.jpg",
+          "Logo.jpg"
+        ],
+        verdict: "Nick was zeer tevreden over het eindresultaat.\n" +
+          "“Ik ben super tevreden met mijn samenwerking met Joppe. Hij denkt graag mee en schiet ook snel in actie. Enkel maar positieve ervaringen dus!”",
+        attachments: [
+          {
+            name: "Website",
+            url: "https://www.rootzbarber.com/",
+            type: AttachmentTypes.website
+          }
+        ],
+        languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js
+        ]
+      },
+      year: "2020-2021",
+      img: "rootz.jpg",
+      category: ProjectTypes.website
+    }
 
     let phpProject: Project = {
       id: "php",
@@ -323,73 +323,73 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
-    // let idkdProject: Project = {
-    //   id: "idkd",
-    //   visible: true,
-    //   title: "In Den Kleyne Doorenboom",
-    //   subTitle: "Website voor een brasserie",
+    let idkdProject: Project = {
+      id: "idkd",
+      visible: true,
+      title: "In Den Kleyne Doorenboom",
+      subTitle: "Website voor een brasserie",
 
-    //   content: {
-    //     alert: {
-    //       title: "Update 2022:",
-    //       content: "In Den Kleyne Doorenboom is overgenomen door De Courant. De vorige website is nog altijd onderaan terug te vinden.",
-    //     },
-    //     languages: [
-    //       LanguageTypes.html5,
-    //       LanguageTypes.scss,
-    //       LanguageTypes.js,
+      content: {
+        alert: {
+          title: "Update 2022:",
+          content: "In Den Kleyne Doorenboom is overgenomen door De Courant. De vorige website is nog altijd onderaan terug te vinden.",
+        },
+        languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js,
 
-    //     ],
-    //     about: "In Den Kleyne Doorenboom is een brasserie gelegen te Kasterlee. Via een kennis ben ik met de eigenaars in contact gekomen en heb ik zo de opdracht gekregen om de website te vernieuwen. Dit was zeker noodzakelijk omdat de oude website verouderd was. Deze opdracht heb ik met open armen ontvangen. Zo ben ik begonnen met een aantal prototypes te maken zodat ik mezelf kon inleven in de klassieke stijl van de eigenaars en de brasserie zelf.\n" +
-    //       "\n" +
-    //       "Nadat er een overeenkomst was over de stijl van de website, begon het coderen. De website bestaat uit 5 pagina's namelijk: Home, Menu, Foto's, Info en Historiek. Elke pagina volgt de regels van de kunst zoals bijvoorbeeld: een minimale laadtijd, responsiviteit voor mobiele apparaten, error-pagina's, ...",
-    //     contribution: "Alles werd volledig aan mij overhandigd, van het ontwerpen tot coderen en onderhoud. Hieronder staan een aantal foto's van het eindresultaat.",
-    //     images: [
-    //       "Scherm1.JPG",
-    //       "Scherm2.JPG",
-    //       "Scherm3.JPG",
-    //       "Scherm4.JPG",
-    //       "Scherm5.JPG",
-    //     ],
-    //     verdict: "Zowel de uitbaters van Den Doorenboom als ikzelf waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij." ,
-    //     attachments: [{name: "Website", url: "https://decourant.be/", type: AttachmentTypes.website}]
-    //   },
+        ],
+        about: "In Den Kleyne Doorenboom is een brasserie gelegen te Kasterlee. Via een kennis ben ik met de eigenaars in contact gekomen en heb ik zo de opdracht gekregen om de website te vernieuwen. Dit was zeker noodzakelijk omdat de oude website verouderd was. Deze opdracht heb ik met open armen ontvangen. Zo ben ik begonnen met een aantal prototypes te maken zodat ik mezelf kon inleven in de klassieke stijl van de eigenaars en de brasserie zelf.\n" +
+          "\n" +
+          "Nadat er een overeenkomst was over de stijl van de website, begon het coderen. De website bestaat uit 5 pagina's namelijk: Home, Menu, Foto's, Info en Historiek. Elke pagina volgt de regels van de kunst zoals bijvoorbeeld: een minimale laadtijd, responsiviteit voor mobiele apparaten, error-pagina's, ...",
+        contribution: "Alles werd volledig aan mij overhandigd, van het ontwerpen tot coderen en onderhoud. Hieronder staan een aantal foto's van het eindresultaat.",
+        images: [
+          "Scherm1.JPG",
+          "Scherm2.JPG",
+          "Scherm3.JPG",
+          "Scherm4.JPG",
+          "Scherm5.JPG",
+        ],
+        verdict: "Zowel de uitbaters van Den Doorenboom als ikzelf waren zeer tevreden met het eindresultaat. Het is ook leuk om alles wat ik heb geleerd over webdesign, nu ook effectief in de praktijk toe te passen. Elke nieuwe website die ik schrijf, leert me altijd wel iets bij." ,
+        attachments: [{name: "Website", url: "https://decourant.be/", type: AttachmentTypes.website}]
+      },
 
-    //   year: "2020-2021",
-    //   img: "idkd.png",
-    //   category: ProjectTypes.website
-    // }
+      year: "2020-2021",
+      img: "idkd.png",
+      category: ProjectTypes.website
+    }
 
-    // let drfProject: Project = {
-    //   id: "drf",
-    //   visible: true,
-    //   title: "DRforces",
-    //   subTitle: "Website voor een drone hobbypiloot",
+    let drfProject: Project = {
+      id: "drf",
+      visible: true,
+      title: "DRforces",
+      subTitle: "Website voor een drone hobbypiloot",
 
-    //   content: {
-    //     about: "DRForces is een klein bedrijf gelegen te Kasterlee dat zich specialiseert in consulting, drone piloting en webdesign. Ik heb voor dit bedrijf een website gemaakt ter promotie en uit noodzaak. Op de startpagina kunt u kiezen uit de 3 onderwerpen; consulting, drone piloting en web design. Elk onderdeel heeft zijn eigen sub html pagina waarin hierover uitleg wordt gegeven. Momenteel is alleen het webdesign gedeelte volledig uitgewerkt, maar de andere 2 onderwerpen zullen dezelfde layout krijgen met andere content.",
-    //     contribution: "We hebben samen de website ontworpen en dan ben ik zelf aan slag gegaan met het coderen. Hieronder staan een aantal foto's van het eindresultaat van de webdesign pagina.",
-    //     images: [
-    //       "Scherm1.jpg",
-    //       "Scherm2.jpg",
-    //       "Scherm3.jpg",
-    //       "Scherm4.jpg",
-    //       "Scherm5.jpg",
-    //     ],
-    //     verdict: "DRForces is nog jong maar heeft veel beloftevolle projecten in het vooruitzicht. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
-    //     attachments: [{name: "Website", url: "https://drforces.eu/", type:AttachmentTypes.website}]
-    //     ,languages: [
-    //       LanguageTypes.html5,
-    //       LanguageTypes.scss,
-    //       LanguageTypes.js,
+      content: {
+        about: "DRForces is een klein bedrijf gelegen te Kasterlee dat zich specialiseert in consulting, drone piloting en webdesign. Ik heb voor dit bedrijf een website gemaakt ter promotie en uit noodzaak. Op de startpagina kunt u kiezen uit de 3 onderwerpen; consulting, drone piloting en web design. Elk onderdeel heeft zijn eigen sub html pagina waarin hierover uitleg wordt gegeven. Momenteel is alleen het webdesign gedeelte volledig uitgewerkt, maar de andere 2 onderwerpen zullen dezelfde layout krijgen met andere content.",
+        contribution: "We hebben samen de website ontworpen en dan ben ik zelf aan slag gegaan met het coderen. Hieronder staan een aantal foto's van het eindresultaat van de webdesign pagina.",
+        images: [
+          "Scherm1.jpg",
+          "Scherm2.jpg",
+          "Scherm3.jpg",
+          "Scherm4.jpg",
+          "Scherm5.jpg",
+        ],
+        verdict: "DRForces is nog jong maar heeft veel beloftevolle projecten in het vooruitzicht. Met een zeer gemotiveerd en verstandig team zullen ze zeker aan de top komen.",
+        attachments: [{name: "Website", url: "https://drforces.eu/", type:AttachmentTypes.website}]
+        ,languages: [
+          LanguageTypes.html5,
+          LanguageTypes.scss,
+          LanguageTypes.js,
 
-    //     ]
-    //   },
+        ]
+      },
 
-    //   year: "2020-2021",
-    //   img: "drf.jpg",
-    //   category: ProjectTypes.website
-    // }
+      year: "2020-2021",
+      img: "drf.jpg",
+      category: ProjectTypes.website
+    }
 
     let caProject: Project = {
       id: "ca",
@@ -424,19 +424,17 @@ export class ProjectService {
       category: ProjectTypes.school
     }
 
-
-
     this.projects.push(stageProject);
     this.projects.push(shopProject);
-    //this.projects.push(bosteoProject);
+    this.projects.push(bosteoProject);
     this.projects.push(projectVierPuntNul);
     //this.projects.push(niza);
     this.projects.push(todoProject);
-    //this.projects.push(rootzProject);
+    this.projects.push(rootzProject);
     this.projects.push(phpProject);
     this.projects.push(wpfProject);
-    //this.projects.push(idkdProject);
-    //this.projects.push(drfProject);
+    this.projects.push(idkdProject);
+    this.projects.push(drfProject);
     this.projects.push(caProject);
   }
 
